@@ -1,0 +1,47 @@
+<!-- Tabbar开始  -->
+<view class="cu-bar tabbar margin-bottom-xl bg-white">
+    <view class="action box" bindtap="indexTap">
+        <image class="tabbar-img" src="../../img/tabbar/主页2.png" mode="widthFix"  wx:if="{{flag==0}}"></image>
+        <image class="tabbar-img" src="../../img/tabbar/主页1.png" mode="widthFix" wx:else>
+        </image>
+        <view class="tabbar-text">首页</view>
+    </view>
+    <view class="action box" bindtap="questionTap">
+      <image class="tabbar-img" src="../../img/tabbar/问卷2.png" mode="widthFix"  wx:if="{{flag==1}}"></image>
+      <image class="tabbar-img" src="../../img/tabbar/问卷1.png" mode="widthFix" wx:else>
+      </image> 
+      <view class="tabbar-text">问卷</view>
+    </view>
+    <view class="action add-action box" bindtap="createquestionTap">
+      <image class="tabbar-center-img" src="../../img/tabbar/创建2.png" mode="widthFix"  wx:if="{{flag==4}}"></image>
+      <image class="tabbar-center-img" src="../../img/tabbar/创建1.png" mode="widthFix" wx:else>
+      </image> 
+      <view class="tabbar-text">发布</view>
+    </view>
+    <view class="action" bindtap="informationTap">
+      <image class="tabbar-img" src="../../img/tabbar/信息2.png" mode="widthFix"  wx:if="{{flag==2}}"></image>
+      <image class="tabbar-img" src="../../img/tabbar/信息1.png" mode="widthFix" wx:else>
+      </image>
+        <view class="tabbar-text">信息</view>
+    </view>
+    <view class="action box" bindtap="myTap">
+      <image class="tabbar-img" src="../../img/tabbar/我的2.png" mode="widthFix"  wx:if="{{flag==3}}"></image>
+      <image class="tabbar-img" src="../../img/tabbar/我的1.png" mode="widthFix"  wx:else>
+      </image>
+      <view class="tabbar-text">我的</view>
+    </view>
+</view>
+<!-- tabbar结束 -->
+
+<view class="index" wx:if="{{flag==0}}">
+    <index></index>
+</view>
+<view class="questionnaire" wx:if="{{flag==1}}">
+    <questionnaire></questionnaire>
+</view>
+<view class="information" wx:if="{{flag==2}}">
+    <information></information>
+</view>
+<view class="my" wx:if="{{flag==3}}">
+    <my></my>
+</view>

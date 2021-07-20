@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "index": "../../components/index/index",
+    "questionnaire": "../../components/questionnaire/questionnaire",
+    "information": "../../components/information/information",
+    "my": "../../components/my/my"
+  }
+}

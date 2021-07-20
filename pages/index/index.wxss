@@ -1,0 +1,37 @@
+.cu-bar {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.box {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabbar-img {
+    width: 46rpx;
+    height: 46rpx;
+}
+
+.tabbar-text {
+    margin-top: 10rpx;
+    font-size: 24rpx;
+
+}
+
+.add-action {
+    position: relative;
+}
+.tabbar-center-img {
+    position: absolute;
+    bottom: 48rpx;   
+    left: 48rpx;
+    z-index: 1;
+    width: 52rpx;
+    height: 52rpx;
+}
