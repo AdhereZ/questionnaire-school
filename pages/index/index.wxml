@@ -16,7 +16,7 @@
       <image class="tabbar-center-img" src="../../img/tabbar/创建2.png" mode="widthFix"  wx:if="{{flag==4}}"></image>
       <image class="tabbar-center-img" src="../../img/tabbar/创建1.png" mode="widthFix" wx:else>
       </image> 
-      <view class="tabbar-text">发布</view>
+      <view class="tabbar-text">创建</view>
     </view>
     <view class="action" bindtap="informationTap">
       <image class="tabbar-img" src="../../img/tabbar/信息2.png" mode="widthFix"  wx:if="{{flag==2}}"></image>
