@@ -3,7 +3,7 @@
 Page({
  data: {
   //  tabbar按键
-  flag: 0,
+  flag: 3,
  },
  indexTap() {
    this.setData({
@@ -25,10 +25,18 @@ myTap() {
     flag:3,
   })
 },
-createquestionTap() {
+createquestionTap(e) {
   this.setData({
-    flag:4,
+    modalName: e.currentTarget.dataset.target
   })
+},
+hideModal(e) {
+  this.setData({
+    modalName: null
+  })
+},
+dialog(e) {
+  e.stopPropagation()
 }
 
  

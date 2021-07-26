@@ -5,6 +5,8 @@
     left: 0;
     width: 100%;
     margin-bottom: 0;
+    box-shadow: 0px -2px 5px -4px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .box {
@@ -34,4 +36,29 @@
     z-index: 1;
     width: 52rpx;
     height: 52rpx;
+}
+
+.cu-dialog {
+    background-color: #fff;
+    height: 356rpx;
+}
+
+.cu-dialog .createb {
+    padding: 25rpx 0 0 40rpx;
+    display: flex;
+    align-items: center;
+    float: left;
+    height: 178rpx;
+    width: 340rpx;
+    color: rgba(159, 159, 165, 100);
+}
+
+
+.cu-dialog .createb text {
+    display: block;
+    margin-left: 30rpx;
+}
+
+.createb-img {
+    width: 136rpx;
 }

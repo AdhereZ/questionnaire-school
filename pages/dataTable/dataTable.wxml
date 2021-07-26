@@ -1,0 +1,64 @@
+<view class='createdQA'>
+    <view class="lastOperationtime">
+        2021.7.20/14:10:59
+        </view>   
+   <view class="qTitle">
+    关于xxxx的问卷
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <view class="queestionNum">查看数据</view>
+ </view>
+</view>
+
+<view class='createdQA'>
+    <view class="lastOperationtime">
+        2021.7.20/14:10:59
+        </view>   
+   <view class="qTitle">
+    关于xxxx的问卷
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <view class="queestionNum">查看数据</view>
+ </view>
+</view>
+
+<view class='createdQA'>
+    <view class="lastOperationtime">
+        2021.7.20/14:10:59
+        </view>   
+   <view class="qTitle">
+    关于xxxx的问卷
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <view class="queestionNum">查看数据</view>
+ </view>
+</view>
+
+<view class='createdQA'>
+    <view class="lastOperationtime">
+        2021.7.20/14:10:59
+        </view>   
+   <view class="qTitle">
+    关于xxxx的问卷
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <view class="queestionNum">查看数据</view>
+ </view>
+</view>
+
+<view class='createdQA'>
+    <view class="lastOperationtime">
+        2021.7.20/14:10:59
+        </view>   
+   <view class="qTitle">
+    关于xxxx的问卷
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <view class="queestionNum">查看数据</view>
+ </view>
+</view>

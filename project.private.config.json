@@ -1,0 +1,54 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "用户协议",
+                    "pathName": "pages/agreement/agreement",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "问卷清单",
+                    "pathName": "pages/questionnaireList/questionnaireList",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "数据报表",
+                    "pathName": "pages/dataTable/dataTable",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "我的草稿",
+                    "pathName": "pages/draft/draft",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "单选编辑",
+                    "pathName": "pages/editor/single/single",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "排序编辑",
+                    "pathName": "pages/editor/sort/sort",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

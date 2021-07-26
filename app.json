@@ -1,7 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/agreement/agreement",
+    "pages/questionnaireList/questionnaireList",
+    "pages/dataTable/dataTable",
+    "pages/draft/draft",
+    "pages/login/login",
+    "pages/editor/single/single",
+    "pages/editor/sort/sort"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

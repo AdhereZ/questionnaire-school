@@ -1,2 +1,78 @@
-<!--components/my/my.wxml-->
-<text>components/my/my.wxml</text>
+<!-- 头像名称ID -->
+<view class="user">
+
+   <image class="user-img" src="../../img/my/af3955fda991cd578e1d05411e18c191.jpg" mode="scaleToFill"></image>
+
+    <view class="user-name">BUZHIM</view>
+    <view class="usreID">ID号：123456789</view>
+    <view class="IO">OUT</view>
+</view>
+
+
+<!-- 草稿 数据报表.... -->
+<view class="profile">
+    <view class="caogao content-item">
+        <navigator class="cg-img pImg" url="../../pages/draft/draft">
+            <image  mode="widthFix" src="../../img/my/pp.png"></image>
+        </navigator>
+       <view>我的草稿</view>
+    </view>
+    <view class="dataTable content-item">
+        <navigator class="dt-img pImg" url="../../pages/dataTable/dataTable">
+            <image  mode="widthFix" src="../../img/my/antOutline-bar-chart@3x.png"></image>
+        </navigator>
+       <view>数据报表</view>
+    </view>
+    <view class="transactionRrecords content-item">
+        <navigator class="tr-img pImg">
+            <image  mode="widthFix" src="../../img/my/riFill-file-list-3-fill@3x.png"></image>
+        </navigator>
+       <view>交易记录</view>
+    </view>
+    <view class="BT-currency content-item">
+        <navigator class="bt-img pImg">
+            <image  mode="widthFix" src="../../img/my/md-account_balance_wallet@3x.png"></image>
+        </navigator>
+       <view>我的BT币</view>
+    </view>
+</view>
+
+<!-- 个人信息 数据报表.... -->
+<view class="userInfo">
+  <navigator class="userInformation userInfoRow" >
+   <image class="uif-img" src="../../img/my/riFill-account-box-fill@3x.png" mode="widthFix"></image>
+   <text>个人信息</text>
+   <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+  </navigator>
+
+  <navigator class="qaList userInfoRow" url="../../pages/questionnaireList/questionnaireList">
+    <image class="uif-img" src="../../img/my/riFill-file-list-2-fill@3x.png" mode="widthFix"></image>
+    <text>问卷清单</text>
+    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+   </navigator>
+
+   <navigator class="userAgreement userInfoRow" url="../../pages/agreement/agreement">
+    <image class="uif-img" src="../../img/my/ff.png" mode="widthFix"></image>
+    <text>用户协议</text>
+    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+   </navigator>
+
+   <navigator class="privacyPolicy userInfoRow">
+    <image class="uif-img" src="../../img/my/riFill-phone-lock-fill@3x.png" mode="widthFix"></image>
+    <text>隐私政策</text>
+    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+   </navigator>
+
+   <view class="feedback userInfoRow">
+    <image class="uif-img" src="../../img/my/ps.png" mode="widthFix"></image>
+    <text>意见反馈</text>
+    <button class="btn" open-type="feedback"></button>
+    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+   </view>
+
+   <navigator class="userInformation userInfoRow">
+    <image class="uif-img" src="../../img/my/ffps.png" mode="widthFix"></image>
+    <text>联系客服</text>
+    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>
+   </navigator>
+</view>

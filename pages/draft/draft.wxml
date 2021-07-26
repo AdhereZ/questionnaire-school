@@ -1,0 +1,35 @@
+<view class="draft">
+    <view class="time">
+        <image mode="widthFix" src="../../img/other/time.png"></image>
+        <view class="date">2021年7月18日23：04：34 更新</view>
+    </view>
+    <view class="draftTitle">关于学校外卖群的调研</view>
+    <view class="description">请了解或接触过这些外卖群的同学填写</view>
+    <view class="qNum">共1题</view>
+    <view class="option">
+        <view class="option-img" bindtap="showModal" data-target="bottomModal">
+            <image mode="widthFix" src="../../img/other/md-subject@3x.png"></image>
+        </view>
+        <view class="release">发布</view>
+    </view>
+   
+</view>
+
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+    <view class="cu-dialog">
+      <view >
+        <view class="bottom-bar" style="margin-bottom: 4rpx;">编辑</view>
+        <view class="bottom-bar" style="margin-bottom: 14rpx;">删除</view>
+        <view class="bottom-bar"  bindtap="hideModal">取消</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
