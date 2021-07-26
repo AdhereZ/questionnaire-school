@@ -28,3 +28,5 @@
           </view>
     </view>
 </view>
+
+<button class="submit">确认</button>

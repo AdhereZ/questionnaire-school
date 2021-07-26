@@ -2,8 +2,21 @@
     <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
 </view>
 
+<view style="margin-left: 18rpx;">行</view>
+    <view class="option line"> 
+        <view class="inputText">
+      <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image>
+            <input type="text" placeholder="输入选项（50字内）"/>
+            <image class="choose" mode="widthFix" src="../../../img/TitleEditor/editoricon2.png"></image>
+        </view>
+    
+      <view class="addoption">
+          <image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+      </view>
+      
+    </view>
 
-<view style="margin-left: 18rpx;">选项</view>
+<view style="margin-left: 18rpx;">列</view>
 <view class="option"> 
     <view class="inputText">
   <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image>
@@ -17,7 +30,6 @@
   
 </view>
 
-
 <view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
 <view class="setup">
     <view class="answer">
@@ -28,5 +40,8 @@
           </view>
     </view>
 </view>
+
+
+
 
 <button class="submit">确认</button>

@@ -1,4 +1,4 @@
-/* pages/editor/sort/sort.wxss */.question {
+.question {
     margin-top: 26rpx;
     margin-bottom: 20rpx;
     padding: 14rpx 24rpx 24rpx 26rpx;
@@ -20,6 +20,10 @@
 .option {
     margin-top: 18rpx;
     margin-bottom: 100rpx;
+}
+
+.line {
+    margin-bottom: 26rpx;
 }
 
 .inputText {
@@ -53,6 +57,7 @@
     align-items: center;
     padding: 10rpx 18rpx;
     height: 80rpx;
+
 }
 
 .answer {
@@ -80,6 +85,8 @@
     font-size: 28rpx;
     font-weight: normal;
 }
+
+
 
 
 

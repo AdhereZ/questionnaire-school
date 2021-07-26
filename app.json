@@ -8,7 +8,12 @@
     "pages/draft/draft",
     "pages/login/login",
     "pages/editor/single/single",
-    "pages/editor/sort/sort"
+    "pages/editor/sort/sort",
+    "pages/editor/score/score",
+    "pages/editor/matrixRadio/matrixRadio",
+    "pages/editor/multipleChoice/multipleChoice"
+   
+    
     
   ],
   "window":{

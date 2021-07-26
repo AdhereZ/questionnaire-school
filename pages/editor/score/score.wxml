@@ -1,0 +1,18 @@
+<view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+</view>
+
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:20px">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+            </switchItme>
+          </view>
+    </view>
+</view>
+
+
+ <button class="submit">确认</button>

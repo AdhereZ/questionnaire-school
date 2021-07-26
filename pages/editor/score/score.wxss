@@ -1,4 +1,4 @@
-/* pages/editor/sort/sort.wxss */.question {
+.question {
     margin-top: 26rpx;
     margin-bottom: 20rpx;
     padding: 14rpx 24rpx 24rpx 26rpx;
@@ -10,7 +10,7 @@
     padding: 8rpx 24rpx 8rpx 24rpx;
     border: 2rpx solid #B6B6B6;
     border-radius: 28rpx;
-    font-size:28rpx;
+    font-size: 28rpx;
     line-height: 20rpx;
     color: #101010;
     width: 700rpx;
@@ -53,6 +53,7 @@
     align-items: center;
     padding: 10rpx 18rpx;
     height: 80rpx;
+
 }
 
 .answer {
@@ -60,14 +61,15 @@
     height: 80rpx;
     padding: 20rpx 38rpx 20rpx 18rpx;
 }
+
 .addoption image {
     width: 48rpx;
     height: 48rpx;
 }
+
 .switch {
     float: right;
 }
-
 .setup {
     margin-bottom: 110rpx;
 }
@@ -80,6 +82,3 @@
     font-size: 28rpx;
     font-weight: normal;
 }
-
-
-

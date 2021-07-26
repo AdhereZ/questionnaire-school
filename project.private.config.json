@@ -47,6 +47,24 @@
                     "pathName": "pages/editor/sort/sort",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "打分编辑",
+                    "pathName": "pages/editor/score/score",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "矩阵单选编辑",
+                    "pathName": "pages/editor/matrixRadio/matrixRadio",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "多选编辑",
+                    "pathName": "pages/editor/multipleChoice/multipleChoice",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

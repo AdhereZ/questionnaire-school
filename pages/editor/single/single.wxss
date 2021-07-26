@@ -19,6 +19,7 @@
 
 .option {
     margin-top: 18rpx;
+    margin-bottom: 100rpx;
 }
 
 .inputText {
@@ -52,7 +53,7 @@
     align-items: center;
     padding: 10rpx 18rpx;
     height: 80rpx;
-    margin-bottom: 100rpx;
+
 }
 
 .answer {
@@ -66,6 +67,19 @@
 }
 .switch {
     float: right;
+}
+
+.setup {
+    margin-bottom: 110rpx;
+}
+
+.submit {
+    background-color: #5677fc;
+    color: #fff;
+    width: 430rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    font-weight: normal;
 }
 
 
