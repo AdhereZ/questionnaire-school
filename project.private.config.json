@@ -65,6 +65,12 @@
                     "pathName": "pages/editor/multipleChoice/multipleChoice",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "填空",
+                    "pathName": "pages/editor/fillBlanks/fillBlanks",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

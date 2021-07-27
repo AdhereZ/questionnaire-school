@@ -11,7 +11,8 @@
     "pages/editor/sort/sort",
     "pages/editor/score/score",
     "pages/editor/matrixRadio/matrixRadio",
-    "pages/editor/multipleChoice/multipleChoice"
+    "pages/editor/multipleChoice/multipleChoice",
+    "pages/editor/fillBlanks/fillBlanks"
    
     
     

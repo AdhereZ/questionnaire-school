@@ -25,7 +25,7 @@
 <view class="setup">
     <view class="answer setupLine">
         <view style="float:left;">必答</view>
-        <view class="switch" style="margin-right:20px">
+        <view class="switch" style="margin-right:40rpx">
             <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
             </switchItme>
           </view>
@@ -36,8 +36,14 @@
        <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
         <input type="text" value="{{leastNum}}" bindblur="changeLeastNum"/>
         <view class="account">
-            <view class="add" bindtap="leastAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" ><image mode="widthFix" src="../../../img/icons/arrow_up2.png"></image></view>
-            <view class="sub" bindtap="leastSub" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;"><image mode="widthFix" src="../../../img/icons/arrow_down2.png"></image></view>
+            <view class="add" bindtap="leastAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" >
+                <image mode="widthFix" src="../../../img/icons/arrow_up2.png" wx:if="{{leastAddFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_up1.png" wx:else></image>
+            </view>
+            <view class="sub" bindtap="leastSub" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;">
+                <image mode="widthFix" src="../../../img/icons/arrow_down2.png" wx:if="{{leastSubFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_down1.png" wx:else></image>
+            </view>
         </view>
        </view>
     </view>
@@ -48,8 +54,14 @@
        <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
         <input type="text" value="{{mostNum}}" bindblur="changeMostNum"/>
         <view class="account">
-            <view class="add" bindtap="mostAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" ><image mode="widthFix" src="../../../img/icons/arrow_up2.png"></image></view>
-            <view class="sub" bindtap="mostSub" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;"><image mode="widthFix" src="../../../img/icons/arrow_down2.png"></image></view>
+            <view class="add" bindtap="mostAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" >
+                <image mode="widthFix" src="../../../img/icons/arrow_up2.png" wx:if="{{mostAddFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_up1.png" wx:else></image>
+            </view>
+            <view class="sub" bindtap="mostSub" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;">
+                <image mode="widthFix" src="../../../img/icons/arrow_down2.png" wx:if="{{mostSubFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_down1.png" wx:else></image>
+            </view>
         </view>
        </view>
     </view>
