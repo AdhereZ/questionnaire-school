@@ -39,7 +39,7 @@
 
 <!-- 个人信息 数据报表.... -->
 <view class="userInfo">
-  <navigator class="userInformation userInfoRow" >
+  <navigator class="userInformation userInfoRow" url="../../pages/userInformation/userInformation">
    <image class="uif-img" src="../../img/my/riFill-account-box-fill@3x.png" mode="widthFix"></image>
    <text>个人信息</text>
    <image class="right-img" src="../../img/my/arrow-right.png" mode="widthFix"></image>

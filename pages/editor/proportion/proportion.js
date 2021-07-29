@@ -1,19 +1,13 @@
-// pages/login/login.js
+// pages/editor/proportion/proportion.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-      checked:false
+
     },
-    checkChange(e) {
-      let {checked}=this.data
-      checked= !checked
-      this.setData({
-          checked
-      })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */

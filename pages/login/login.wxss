@@ -1,1 +1,43 @@
-/* pages/login/login.wxss */
+page {
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    left: 256rpx;
+    top: 200rpx;
+    width: 256rpx;
+    height: 256rpx;
+    border-radius: 200rpx;
+}
+
+button {
+    width: 610rpx !important;
+    height: 96rpx !important;
+    line-height: 70rpx !important;
+    color: #fff;
+    background-color: #93c038;
+    position: absolute;
+    left: 80rpx;
+    top: 552rpx;
+    font-weight: normal !important;
+}
+.agreement {
+    position: absolute;
+    left: 168rpx;
+    top: 700rpx;
+    display: flex;
+    align-items: center;
+    color: #987070;
+    font-size: 24rpx;
+}
+.checkbox {
+    width: 30rpx;
+    height: 30rpx;
+    border: 2rpx solid #BBBBBB;
+    margin-right: 18rpx;
+}
+
+.agreement navigator {
+     color: #1881d1;
+}

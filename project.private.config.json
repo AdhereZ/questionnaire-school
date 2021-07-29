@@ -67,8 +67,38 @@
                     "scene": null
                 },
                 {
-                    "name": "填空",
+                    "name": "填空编辑",
                     "pathName": "pages/editor/fillBlanks/fillBlanks",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "比重编辑",
+                    "pathName": "pages/editor/proportion/proportion",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "量表编辑",
+                    "pathName": "pages/editor/scale/scale",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "下拉题编辑",
+                    "pathName": "pages/editor/dropDown/dropDown",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "多选填空",
+                    "pathName": "pages/editor/multipleBlanks/multipleBlanks",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "登录",
+                    "pathName": "pages/login/login",
                     "query": "",
                     "scene": null
                 }

@@ -1,2 +1,11 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<image class="logo" mode="widthFix" src="../../img/create/questionnaireSchool.png"></image>
+
+<button>微信登录</button>
+
+<view class="agreement">
+  <view class="checkbox" bindtap="checkChange"><image mode="widthFix" src="../../img/userInfo/select.png" wx:if="{{checked}}"></image></view>
+  已阅读
+  <navigator url="../agreement/agreement">《用户协议》</navigator>
+  和
+  <navigator url="../privacyPolicy/privacyPolicy">《隐私政策》</navigator>
+</view>

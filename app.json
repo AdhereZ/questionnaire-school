@@ -4,6 +4,7 @@
     "pages/logs/logs",
     "pages/agreement/agreement",
     "pages/questionnaireList/questionnaireList",
+    "pages/userInformation/userInformation",
     "pages/dataTable/dataTable",
     "pages/draft/draft",
     "pages/login/login",
@@ -12,10 +13,13 @@
     "pages/editor/score/score",
     "pages/editor/matrixRadio/matrixRadio",
     "pages/editor/multipleChoice/multipleChoice",
-    "pages/editor/fillBlanks/fillBlanks"
-   
-    
-    
+    "pages/editor/fillBlanks/fillBlanks",
+    "pages/editor/proportion/proportion",
+    "pages/editor/scale/scale",
+    "pages/editor/dropDown/dropDown",
+    "pages/editor/multipleBlanks/multipleBlanks",
+    "pages/privacyPolicy/privacyPolicy"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
