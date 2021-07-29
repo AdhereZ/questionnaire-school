@@ -1,1 +1,109 @@
-/* pages/editor/multipleBlanks/multipleBlanks.wxss */
+/* pages/editor/multipleBlanks/multipleBlanks.wxss */.question {
+    margin-top: 26rpx;
+    margin-bottom: 20rpx;
+    padding: 14rpx 24rpx 24rpx 26rpx;
+    background-color: #fff;
+
+}
+
+.question textarea {
+    padding: 8rpx 24rpx 8rpx 24rpx;
+    border: 2rpx solid #B6B6B6;
+    border-radius: 28rpx;
+    font-size:28rpx;
+    line-height: 20rpx;
+    color: #101010;
+    width: 700rpx;
+    height: 152rpx;
+}
+
+
+.answer {
+    background-color: #fff;
+    height: 80rpx;
+    padding: 20rpx 38rpx 20rpx 18rpx;
+}
+.setupLine {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 12rpx 38rpx 12rpx 18rpx;
+    margin-bottom: 10rpx;
+} 
+.switch {
+        margin-left: 510rpx;
+}
+
+
+.setup {
+    margin-bottom: 110rpx;
+}
+
+.selectBar select {
+    margin-left: 430rpx;
+    color: #888888;
+}
+
+.maxWord input {
+    width: 140rpx;
+    height: 54rpx;
+    font-size: 24rpx;
+    border: 2rpx solid #BBBBBB;
+    border-radius: 10rpx;
+    text-align: center;
+}
+.setupLine input {
+    width: 76rpx;
+    height: 52rpx;
+    padding-left: 28rpx;
+    border: 1px solid #DCDFE6;
+}
+.add, .sub {
+    background-color: #F5F7FA;
+ }
+
+.account image {
+    width: 30rpx;
+    height: 15rpx;
+}
+
+.submit {
+    background-color: #5677fc;
+    margin-bottom: 45rpx;
+    color: #fff;
+    width: 430rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    font-weight: normal;
+}
+
+/* 填空框 */
+.fb {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 12rpx 38rpx 12rpx 18rpx;
+    margin-bottom: 10rpx;
+}
+.idx {
+    margin: 0 418rpx 0 10rpx;
+    width: 30rpx; 
+    height: 30rpx; 
+    border: 2rpx solid #BBBBBB; 
+    border-radius: 15rpx;
+    text-align: center;
+    color: #BBBBBB;
+    font-size: 24rpx;  
+
+}
+.fb input {
+   width: 140rpx;
+   height: 60rpx;
+   border: 2rpx solid #BBBBBB;
+   border-radius: 10rpx;
+   padding-left: 14rpx;
+}
+
+
+
+

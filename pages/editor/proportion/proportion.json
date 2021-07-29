@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "switchItme": "../../../components/switchItme/switchItme"
+  },
+  "navigationBarTitleText": "编辑"
 }

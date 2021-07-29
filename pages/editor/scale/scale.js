@@ -1,13 +1,44 @@
-// pages/editor/scale/scale.js
+// pages/editor/fillBlanks/fillBlanks.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        switchData: {
+            id: 1,
+            color: '#aabbfd',
+            isOn: false
+          },
+          selectArray: [{
+            "id": 1,
+            "text": "1"
+        }, {
+            "id": 2,
+            "text": "2"
+        }, 
+        {
+            "id": 3,
+            "text": "3"
+        }, 
+        {
+            "id": 4,
+            "text": "4"
+        }, 
+        {
+            "id": 5,
+            "text": "5"
+        }, ]
 
     },
 
+    tagSwitch(event) {
+       
+        this.data.switchData.isOn = !this.data.switchData.isOn
+        this.setData({
+          switchData: this.data.switchData
+        });
+    },
     /**
      * 生命周期函数--监听页面加载
      */

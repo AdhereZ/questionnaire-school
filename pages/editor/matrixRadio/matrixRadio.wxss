@@ -84,6 +84,7 @@
     height: 68rpx;
     font-size: 28rpx;
     font-weight: normal;
+    margin-bottom: 45rpx;
 }
 
 

@@ -9,12 +9,33 @@ Page({
             id: 1,
             color: '#aabbfd',
             isOn: false
-          }
+          },
+          option: [
+            {
+                id: 0
+            }
+        ],
 
     },
-
+    addOption(e) {
+      console.log(e);
+      let { option } = this.data
+      let newOption = { id: option.length }
+      option.push(newOption)
+      this.setData({
+          option
+      })
+  },
+  deleteoption(e) {
+     console.log(e);
+      let { option} = this.data
+      let index = e.currentTarget.dataset.index
+      option.splice(index, 1)     
+      this.setData({
+          option
+      })
+  },
     tagSwitch(event) {
-       
         this.data.switchData.isOn = !this.data.switchData.isOn
         this.setData({
           switchData: this.data.switchData

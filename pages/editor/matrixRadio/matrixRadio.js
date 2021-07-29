@@ -9,10 +9,51 @@ Page({
             id: 1,
             color: '#aabbfd',
             isOn: false
+          },
+          lineOption: [
+            {
+                id: Math.random()
+            }
+        ],
+        columnOption: [
+          {
+            id: Math.random()
           }
+      ],
 
     },
-
+    addOption() {
+      let { lineOption } = this.data
+      let newOption = { id: Math.random() }
+      lineOption.push(newOption)
+      this.setData({
+        lineOption
+      })
+  },
+  deleteoption(e) {
+      let { lineOption} = this.data
+      let index = e.currentTarget.dataset.index
+      lineOption.splice(index, 1)     
+      this.setData({
+        lineOption
+      })
+  },
+  addCOption() {
+    let { columnOption } = this.data
+    let newOption = { id: Math.random() }
+    columnOption.push(newOption)
+    this.setData({
+      columnOption
+    })
+},
+deleteCoption(e) {
+    let { columnOption} = this.data
+    let index = e.currentTarget.dataset.index
+    columnOption.splice(index, 1)     
+    this.setData({
+      columnOption
+    })
+},
     tagSwitch(event) {
        
         this.data.switchData.isOn = !this.data.switchData.isOn

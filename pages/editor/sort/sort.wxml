@@ -5,14 +5,15 @@
 
 <view style="margin-left: 18rpx;">选项</view>
 <view class="option"> 
-    <view class="inputText">
-  <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image>
+    <view class="inputText" wx:for="{{option}}" wx:key="{{item.id}}">
+        <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
         <input type="text" placeholder="输入选项（50字内）"/>
         <image class="choose" mode="widthFix" src="../../../img/TitleEditor/editoricon2.png"></image>
     </view>
 
   <view class="addoption">
-      <image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    <view bindtap="addOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    </view>
   </view>
   
 </view>

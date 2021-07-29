@@ -3,29 +3,31 @@
 </view>
 
 <view style="margin-left: 18rpx;">行</view>
-    <view class="option line"> 
-        <view class="inputText">
-      <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image>
+    <view class="option line" > 
+        <view class="inputText" wx:for="{{lineOption}}" wx:key="{{item.id}}">
+            <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
             <input type="text" placeholder="输入选项（50字内）"/>
             <image class="choose" mode="widthFix" src="../../../img/TitleEditor/editoricon2.png"></image>
         </view>
     
       <view class="addoption">
-          <image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+        <view bindtap="addOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+        </view>
       </view>
       
     </view>
 
 <view style="margin-left: 18rpx;">列</view>
 <view class="option"> 
-    <view class="inputText">
-  <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image>
+    <view class="inputText" wx:for="{{columnOption}}" wx:key="{{item.id}}" >
+        <view bindtap="deleteCoption" data-index="{{index}}" data-ty="columnOption"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
         <input type="text" placeholder="输入选项（50字内）"/>
         <image class="choose" mode="widthFix" src="../../../img/TitleEditor/editoricon2.png"></image>
     </view>
 
   <view class="addoption">
-      <image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    <view bindtap="addCOption" data-ty="columnOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    </view>
   </view>
   
 </view>

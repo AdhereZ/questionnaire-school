@@ -1,1 +1,68 @@
-/* pages/editor/scale/scale.wxss */
+.question {
+    margin-top: 26rpx;
+    margin-bottom: 20rpx;
+    padding: 14rpx 24rpx 24rpx 26rpx;
+    background-color: #fff;
+
+}
+
+.question textarea {
+    padding: 8rpx 24rpx 8rpx 24rpx;
+    border: 2rpx solid #B6B6B6;
+    border-radius: 28rpx;
+    font-size:28rpx;
+    line-height: 20rpx;
+    color: #101010;
+    width: 700rpx;
+    height: 152rpx;
+}
+
+
+.answer {
+    background-color: #fff;
+    height: 80rpx;
+    padding: 20rpx 38rpx 20rpx 18rpx;
+}
+.setupLine {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 12rpx 38rpx 12rpx 18rpx;
+    margin-bottom: 10rpx;
+    background-color: #fff;
+} 
+.switch {
+        margin-left: 510rpx;
+}
+
+
+.setup {
+    margin-bottom: 110rpx;
+}
+
+.selectBar select {
+    margin-left: 430rpx;
+    color: #888888;
+}
+
+.label input {
+    width: 140rpx;
+    height: 54rpx;
+    font-size: 24rpx;
+    border: 2rpx solid #BBBBBB;
+    border-radius: 10rpx;
+    text-align: center;
+}
+.submit {
+    background-color: #5677fc;
+    color: #fff;
+    width: 430rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    font-weight: normal;
+    margin-bottom: 45rpx;
+}
+
+
+
+

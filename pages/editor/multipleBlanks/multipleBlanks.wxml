@@ -1,2 +1,51 @@
-<!--pages/editor/multipleBlanks/multipleBlanks.wxml-->
-<text>pages/editor/multipleBlanks/multipleBlanks.wxml</text>
+
+<view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+</view>
+
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer setupLine">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:40rpx">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+            </switchItme>
+          </view>
+    </view>
+    <view class="selectBar setupLine">
+        <view>答题限制</view>
+        <select prop-array="{{selectArray}}"></select>
+    </view>
+
+    <view class="leastSelect setupLine">
+        <view style="margin-right: 402rpx;">填空框数量</view>
+
+       <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
+        <input type="text" value="{{leastNum}}" bindblur="changeLeastNum"/>
+        <view class="account">
+            <view class="add" bindtap="leastAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" >
+                <image mode="widthFix" src="../../../img/icons/arrow_up2.png" wx:if="{{leastAddFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_up1.png" wx:else></image>
+            </view>
+            <view class="sub" bindtap="leastSub" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;">
+                <image mode="widthFix" src="../../../img/icons/arrow_down2.png" wx:if="{{leastSubFlag}}"></image>
+                <image mode="widthFix" src="../../../img/icons/arrow_down1.png" wx:else></image>
+            </view>
+        </view>
+       </view>
+    </view>
+    
+    <view class="fillBlankAreas">
+        <view class="fb" wx:for="{{fillBlanks}}">
+            <view>框标题</view>
+            <view class="idx">{{index+1}}</view>
+            <input placeholder="标题{{index+1}}"/>
+        </view>
+    </view>
+</view>
+
+
+<button class="submit">确认</button>
+
+
