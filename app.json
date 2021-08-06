@@ -18,8 +18,10 @@
     "pages/editor/scale/scale",
     "pages/editor/dropDown/dropDown",
     "pages/editor/multipleBlanks/multipleBlanks",
-    "pages/privacyPolicy/privacyPolicy"
-
+    "pages/privacyPolicy/privacyPolicy",
+    "pages/createQuestionnaire/createQuestionnaire",
+    "pages/chooseType/chooseType",
+    "pages/preview/preview"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -27,6 +29,6 @@
     "navigationBarTitleText": "问卷校园",
     "navigationBarTextStyle":"black"
   },
-  "style": "v2",
+
   "sitemapLocation": "sitemap.json"
 }

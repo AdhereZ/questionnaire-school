@@ -1,0 +1,6 @@
+input {
+    width: 686rpx;
+    height: 60rpx;
+    padding: 16rpx;
+    border: 2rpx solid #BBBBBB;
+}

@@ -1,0 +1,9 @@
+page {
+    height: 3000rpx;
+}
+.title {
+    background-color: #fff;
+    padding: 66rpx 0 90rpx 0;
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20rpx;
+}

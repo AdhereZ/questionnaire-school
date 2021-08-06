@@ -1,0 +1,21 @@
+<view class="QaTitle">
+    <view style="font-weight: 700;font-family: SFUIText-bold; font-size: 36rpx;">问卷标题</view>
+
+        <textarea type="text" class="titleInput" placeholder="输入标题（100字内）"></textarea>
+</view>
+
+<view class="describe">
+    <view style="font-family: SFUIText-bold; font-size: 36rpx; font-weight: 700;">备注说明</view>
+    <textarea type="text" class="titleInput" placeholder="请输入填写本问卷的相关要求（300字内）" class="describeInput"></textarea>
+</view>
+
+<navigator class="addQuestion" url="../chooseType/chooseType">
+    <image mode="widthFix" src="../../img/TitleEditor/addicon.png"></image>
+    <view style="color: #2D77FB; font-size: 40rpx; font-family: SFUIText-regular;">添加题目</view>
+</navigator>
+
+<view class="option">
+    <navigator class="option_btn" url="../chooseType/chooseType">加题</navigator>
+    <view class="option_btn">预览</view>
+    <navigator class="option_btn" url="../draft/draft">完成</navigator>
+</view>

@@ -1,0 +1,9 @@
+<view class="scale" style="margin-left: 35rpx;">
+    <view class="scale_row">
+        <view class="scale_square {{item.beChoose ? 'bgDark':''}}" wx:for="{{scale}}" wx:key="{{item.id}}" bindtap="bgChange" data-index="{{index}}">{{index+1}}</view>
+    </view>
+</view>
+<view style="display:flex; width: 100%;">
+    <view style="margin-right: 520rpx;">左标签</view>
+    <view>右标签</view>
+</view>

@@ -1,0 +1,35 @@
+<view class="title">
+    <QTitleCard></QTitleCard>
+</view>
+
+<completeCard>
+   <view style="margin-left: 18rpx;">
+    <singleChoice>
+    </singleChoice>
+   </view>
+</completeCard>
+
+<completeCard>
+    <view style="margin-left: 18rpx;">
+     <fillBlank></fillBlank>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <score></score>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <scale></scale>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <proportion></proportion>
+    </view>
+ </completeCard>
+

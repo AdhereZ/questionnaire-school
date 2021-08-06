@@ -1,0 +1,7 @@
+<view catchtouchmove="handleTouchMove" class="stars">
+   <view wx:for="{{stars}}" wx:key="{{item.id}}" class="star" data-index="{{index}}" bindtap="handleClick">
+    <image mode="widthFix" src="/img/icons/star.png" wx:if="{{item.isBright}}"></image>
+    <image mode="widthFix" src="/img/icons/star_dark.png" wx:else></image>
+   </view>
+   
+</view>

@@ -101,6 +101,24 @@
                     "pathName": "pages/login/login",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "问卷创建",
+                    "pathName": "pages/createQuestionnaire/createQuestionnaire",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "题型选择",
+                    "pathName": "pages/chooseType/chooseType",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "问卷预览",
+                    "pathName": "pages/preview/preview",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

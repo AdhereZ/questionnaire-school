@@ -2,5 +2,5 @@
   "usingComponents": {
     "switchItme": "../../../components/switchItme/switchItme"
   },
-  "navigationBarTitleText": "编辑"
+  "navigationBarTitleText": "打分题编辑"
 }

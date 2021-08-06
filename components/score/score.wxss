@@ -1,0 +1,19 @@
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600rpx;
+    margin-left: 50rpx;
+}
+
+.star {
+    margin: 0 30rpx;
+    width: 70rpx;
+    height: 80rpx;
+}
+
+image {
+    width: 70rpx;
+    height: 70rpx;
+}
+

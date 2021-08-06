@@ -1,0 +1,8 @@
+<view class="complete-card">
+    <view 
+    style="width: 644rpx; height: 44rpx; font-weight: 700; margin-bottom: 32rpx;"
+    >Q1：问题描述</view>
+  <view>
+      <slot></slot>
+  </view>
+</view>

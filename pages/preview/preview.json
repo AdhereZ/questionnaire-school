@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "QTitleCard": "../../components/QTitleCard/QTitleCard",
+    "completeCard": "childCmp/completeCard/completeCard",
+    "singleChoice": "/components/singleChoice/singleChoice",
+    "fillBlank": "/components/fillBlank/fillBlank",
+    "score": "/components/score/score",
+    "scale": "/components/scale/scale",
+    "proportion": "/components/proportion/proportion"
+  },
+  "navigationBarTitleText": "问卷预览"
+}

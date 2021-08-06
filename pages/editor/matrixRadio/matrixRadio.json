@@ -2,5 +2,5 @@
   "usingComponents": {
     "switchItme": "../../../components/switchItme/switchItme"
   },
-  "navigationBarTitleText": "编辑"
+  "navigationBarTitleText": "矩阵单选编辑"
 }

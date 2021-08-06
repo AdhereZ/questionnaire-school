@@ -1,0 +1,5 @@
+.complete-card {
+    background-color: #fff;
+    padding: 12rpx 20rpx 30rpx 20rpx;
+    margin-bottom: 10rpx;
+}

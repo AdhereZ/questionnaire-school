@@ -1,0 +1,5 @@
+<view >
+    <my-radio wx:for="{{problem}}" wx:key="{{item.id}}" isChecked="{{item.isChecked}}" bindtap="mradioChange" data-idx="{{index}}" >
+        {{item.value}}
+    </my-radio>
+</view>

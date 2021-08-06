@@ -1,0 +1,27 @@
+<slider block-size="16" activeColor="#1684fc" min="0" max="100" bindchange="handleChange"></slider>
+<view class="mark_row">
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        0
+    </view>
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        {{max/5}}
+    </view>
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        {{max/5*2}}
+    </view>
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        {{max/5*3}}
+    </view>
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        {{max/5*4}}
+    </view>
+    <view class="mark">
+        <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
+        {{max}}
+    </view>
+</view>
