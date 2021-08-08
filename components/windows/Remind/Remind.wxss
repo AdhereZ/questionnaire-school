@@ -1,0 +1,26 @@
+
+/* 提示信息样式设置 */
+.remind {
+  height: 60rpx;
+  background-color: #fefced;
+  padding: 10rpx;
+}
+.remind navigator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FF7F4B;
+  font-size: 28rpx;
+}
+.remind navigator view {
+  display: inline-block;
+}
+.remind navigator view .right {
+  text-align: right;
+  padding-right: 30rpx;
+}
+
+image {
+  width: 32rpx;
+  height: 32rpx;
+}

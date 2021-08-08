@@ -1,0 +1,12 @@
+.dropDown_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+
+.title {
+    width: 420rpx;
+    height: 60rpx;
+    line-height: 70rpx;
+    padding-right: 46rpx;
+}

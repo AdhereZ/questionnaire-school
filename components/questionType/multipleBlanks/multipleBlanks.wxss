@@ -1,0 +1,16 @@
+.mulBlanks_row { 
+   display: flex;
+   align-items: center;
+   margin-bottom: 20rpx;
+}
+
+.mulBlanks_row .title {
+    height: 60rpx;
+    margin-right: 28rpx;
+    line-height: 60rpx;
+}
+
+.mulBlanks_row input {
+    width: 490rpx;
+    height: 60rpx;
+}

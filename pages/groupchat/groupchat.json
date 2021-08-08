@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "search":"../../components/groupchat/search/search",
+    "friends":"../../components/groupchat/friends/friends"
+  }
+}

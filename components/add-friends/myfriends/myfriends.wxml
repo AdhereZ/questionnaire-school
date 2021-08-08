@@ -1,0 +1,12 @@
+<view class="myfriend">
+    <view class="img">
+
+    </view>
+    <view class="name">
+        小
+    </view>
+    <navigator class="adding">
+        <image  src="../../../img/infomation/addfriend.png" mode="widthFix">
+        </image>
+    </navigator>
+</view>

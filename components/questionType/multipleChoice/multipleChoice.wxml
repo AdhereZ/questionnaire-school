@@ -1,0 +1,10 @@
+<!--components/multipleChoice/multipleChoice.wxml-->
+<view class="mulChoice">
+    <view class="mulChoice_row" wx:for="{{title}}" wx:key="{{item.id}}" >
+        <view style="display: flex; align-items: center;" bindtap="handleClick" data-index="{{index}}">
+            <myRadio style="margin-top: 15rpx" isChecked="{{item.isChecked}}"></myRadio>
+        <view style="margin-right: 25rpx;">{{item.value}}</view>
+        </view>
+        <input type="text" placeholder="填空项（20字内）" wx:if="{{item.isChecked}}"/>
+    </view>
+</view>

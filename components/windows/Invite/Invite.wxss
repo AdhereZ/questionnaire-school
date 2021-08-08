@@ -1,0 +1,39 @@
+.invite {
+  display: flex;
+  height: 150rpx;
+  background-color: #fff;
+  border-style: none none solid;
+  border-width: 4rpx;
+  border-color: black;
+}
+.invite .Img {
+
+  padding: 20rpx;
+  padding-right: 10rpx;
+}
+
+.invite .Img image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.invite .Circle {
+  font-size: larger;
+  padding: 5rpx;
+  text-align: center;
+  color: #fff;
+  background-color: #84878d;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+}
+.invite .Words {
+  color: #000;
+}
+.invite .Title {
+  font-size: larger;
+  font-weight: bold;
+  padding: 20rpx;
+}
+.invite .Body {
+  padding-left: 20rpx;
+}

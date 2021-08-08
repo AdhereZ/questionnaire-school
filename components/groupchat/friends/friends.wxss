@@ -1,0 +1,57 @@
+.group-class {
+  position: relative;
+  top: -24rpx;
+  color: #9f9fa5;
+  font-size: 24rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+  left: 10rpx;
+}
+.circle {
+  position: relative;
+  top: -60rpx;
+  left: 184rpx;
+  border-style: solid;
+  border-color: #c7c7c7;
+  border-width: 2rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.group-friends view {
+  top: -40rpx;
+  left: 20rpx;
+  position: relative;
+  border-style: solid;
+  border-color: #c7c7c7;
+  border-width: 2rpx;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.group-friends image {
+  position: relative;
+  left: 80rpx;
+  top: -96rpx;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  border-style: solid;
+  border-color: #181515;
+}
+.group-friends .name {
+  position: relative;
+  top: -160rpx;
+  left: 172rpx;
+  width: 620rpx;
+  height: 55rpx;
+  border-radius: 0rpx;
+  background-color: unset;
+  color: #101010;
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+  border-style: none none solid none;
+}

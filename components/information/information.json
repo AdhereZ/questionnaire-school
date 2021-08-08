@@ -1,4 +1,9 @@
 {
     "component": true,
-    "usingComponents": {}
+    "usingComponents": {
+        "Remind": "../../components/windows/Remind/Remind",
+        "Invite": "../../components/windows/Invite/Invite",
+        "Chatting": "../../components/windows/Chatting/Chatting",
+        "Bottom": "../../components/windows/Bottom/Bottom"
+    }
 }

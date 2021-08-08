@@ -1,0 +1,17 @@
+.search {
+  border-style:solid none solid;
+  border-width: 4rpx;
+  border-color: #BBBBBB;
+  height: 100rpx;
+}
+.search image {
+  position: relative;
+  width: 60rpx;
+  top: 20rpx;
+}
+.search input {
+  position: relative;
+  left: 80rpx;
+  top: -36rpx;
+  width: 140rpx;
+}

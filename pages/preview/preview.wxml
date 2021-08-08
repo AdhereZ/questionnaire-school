@@ -33,3 +33,32 @@
     </view>
  </completeCard>
 
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <dropDown></dropDown>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <multipleBlanks></multipleBlanks>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <multipleChoice></multipleChoice>
+    </view>
+ </completeCard>
+
+ <completeCard>
+    <view style="margin-left: 18rpx;">
+     <matrixRadio></matrixRadio>
+    </view>
+ </completeCard>
+
+ 
+
+ 
+ 
+

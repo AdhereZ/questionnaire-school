@@ -1,0 +1,6 @@
+<view class="dropDown">
+    <view class="dropDown_row" wx:for="{{title}}" wx:for-index="index1" wx:for-item="item1" wx:key="{{item1.id}}">
+        <view class="title">{{item1.value}}</view>
+        <select prop-array="{{item1.selectArray}}"></select>
+    </view>
+</view>

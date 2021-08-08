@@ -1,0 +1,32 @@
+.Bottom {
+  position: relative;
+  top: 636rpx;
+  width: 244rpx;
+  height: 80rpx;
+  line-height: 40rpx;
+  border-radius: 0 40rpx 40rpx 0;
+  text-align: center;
+  box-shadow: 0 2rpx 12rpx 0 rgba(0, 0, 0, 0.4);
+}
+.Bottom .Add {
+  position: absolute;
+  left: 36rpx;
+  top: 16rpx;
+  
+}
+.add {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.Bottom .Group {
+  position: absolute;
+  left: 150rpx;
+  top: 16rpx;
+  
+}
+
+.group {
+  width: 48rpx;
+  height: 48rpx;
+}

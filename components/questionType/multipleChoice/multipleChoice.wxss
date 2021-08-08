@@ -1,0 +1,14 @@
+.mulChoice_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14rpx;
+}
+
+.mulChoice_row input {
+    width: 226rpx;
+    height: 34rpx;
+    padding-top: 8rpx;
+    padding-bottom: 8rpx;
+    font-size: 24rpx;
+}
+

@@ -1,0 +1,5 @@
+<view class="search">
+    <image class="add-image" src="../../../img/infomation/search.png" mode="widthFix" >
+    </image>
+    <input type="text" class="add-in" placeholder="输入昵称"/>
+</view>

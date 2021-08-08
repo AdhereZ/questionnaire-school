@@ -1,2 +1,19 @@
-<!--components/information/information.wxml-->
-<text>components/information/information.wxml</text>
+<!-- 提示信息 -->
+<view class="inf-remind">
+    <!-- 实现代码 -->
+    <Remind></Remind>
+</view>
+<!-- 提示信息ends -->
+<!-- 邀请回答 -->
+<view class="inf-invite">
+    <Invite></Invite>
+</view>
+<!-- 邀请回答ends -->
+<!-- 好友列表 -->
+<view class="inf-chat">
+    <Chatting></Chatting>
+</view>
+<!-- 好友列表ends -->
+<view>
+    <Bottom></Bottom>
+</view>

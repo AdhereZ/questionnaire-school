@@ -1,0 +1,45 @@
+.group {
+  height: 88rpx;
+  border-style: solid none solid;
+  border-width: 4rpx;
+  border-color: #BBBBBB;
+}
+.group image {
+  position: relative;
+  width: 60rpx;
+  top: 14rpx;
+}
+.group input {
+  position: relative;
+  left: 80rpx;
+  top: -42rpx;
+  width: 140rpx;
+}
+.group .group-all {
+  position: relative;
+  top: -88rpx;
+  left: 535rpx;
+  width: 88rpx;
+  height: 48rpx;
+  line-height: 40rpx;
+  border-radius: 4rpx;
+  background-color: #e6e3e3;
+  font-size: 28rpx;
+  text-align: center;
+  font-family: Arial;
+  color: #ff0000;
+}
+.group .group-next {
+  position: relative;
+  top: -136rpx;
+  left: 640rpx;
+  width: 104rpx;
+  height: 48rpx;
+  line-height: 40rpx;
+  border-radius: 4rpx;
+  background-color: #e6e3e3;
+  color: #ff0000;
+  font-size: 28rpx;
+  text-align: center;
+  font-family: Arial;
+}

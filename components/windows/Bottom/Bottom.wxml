@@ -1,0 +1,9 @@
+<view class="Bottom">
+    <navigator class="Add" url="../../pages/add-friends/add-friedns">
+        <image class='add' src='../../../img/info/info-icon2.png' mode='widthFix'></image>
+    </navigator>
+    <view style="background-color: #bbbbbb; height: 50rpx; width: 2rpx; position: absolute; left: 115rpx; top: 16rpx; "></view>
+    <navigator class="Group" url="../../pages/groupchat/groupchat">
+        <image class="group" src='../../../img/info/info-icon1.png' mode='widthFix'></image>
+    </navigator>
+</view>
