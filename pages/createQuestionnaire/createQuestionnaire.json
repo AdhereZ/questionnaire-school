@@ -1,4 +1,17 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "问卷创建"
+  "usingComponents": {
+    "QTitleCard": "../../components/QTitleCard/QTitleCard",
+    "completeCard": "childCmp/completeCard/completeCard",
+    "singleChoice": "/components/questionType/singleChoice/singleChoice",
+    "fillBlank": "/components/questionType/fillBlank/fillBlank",
+    "score": "/components/questionType/score/score",
+    "scale": "/components/questionType/scale/scale",
+    "proportion": "/components/questionType/proportion/proportion",
+    "dropDown": "/components/questionType/dropDown/dropDown",
+    "multipleBlanks": "/components/questionType/multipleBlanks/multipleBlanks",
+    "multipleChoice": "/components/questionType/multipleChoice/multipleChoice",
+    "matrixRadio": "/components/questionType/matrixRadio/matrixRadio",
+    "sort": "/components/questionType/sort/sort"
+  },
+  "navigationBarTitleText": "问卷编辑"
 }

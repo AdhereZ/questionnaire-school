@@ -1,5 +1,6 @@
+<form bindsubmit="handleSubmit">
 <view class="question">
-    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle"></textarea>
 </view>
 
 
@@ -7,8 +8,9 @@
 <view class="option"> 
     <view class="inputText" wx:for="{{option}}" wx:key="{{item.id}}">
         <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
-        <input type="text" placeholder="输入选项（50字内）"/>
-        <image class="choose" mode="widthFix" src="../../../img/TitleEditor/editoricon2.png"></image>
+        <input type="text" placeholder="输入选项（50字内）" name="选项{{index+1}}"/>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture-check.png" bindtap="chooseImg" wx:if="{{item.type_id===2}}"></image>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture.png" bindtap="chooseImg" wx:else></image>
     </view>
 
   <view class="addoption">
@@ -30,4 +32,5 @@
     </view>
 </view>
 
-<button class="submit">确认</button>
+<button class="submit" form-type="submit">确认</button>
+</form>

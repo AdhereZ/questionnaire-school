@@ -1,6 +1,6 @@
 <image class="logo" mode="widthFix" src="../../img/create/questionnaireSchool.png"></image>
 
-<button>微信登录</button>
+<button open-type="getUserInfo" bindtap="Login">微信登录</button>
 
 <view class="agreement">
   <view class="checkbox" bindtap="checkChange"><image mode="widthFix" src="../../img/userInfo/select.png" wx:if="{{checked}}"></image></view>

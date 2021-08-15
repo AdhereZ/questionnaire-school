@@ -3,35 +3,35 @@
  <view style="color: rgb(10, 133, 241); font-size: 28rpx;margin-top: 228rpx; margin-left: 34rpx; font-weight: 700; font-family: PingFangSC-bold">基础题型</view>
 <view class="local-nav">
   <view>
-  <navigator url="../editor/single/single">   
+  <navigator url="../editor/single/single?id={{id}}">   
       <text class="local-nav-icon-icon1"></text>    
       <text selectable decode>&nbsp; </text>
       <text>单选题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/multipleChoice/multipleChoice">   
+  <navigator url="../editor/multipleChoice/multipleChoice?id={{id}}">   
       <text class="local-nav-icon-icon2"></text> 
       <text selectable decode>&nbsp; </text>   
       <text>多选题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/fillBlanks/fillBlanks">   
+  <navigator url="../editor/fillBlanks/fillBlanks?id={{id}}">   
       <text class="local-nav-icon-icon3"></text>    
       <text selectable decode>&nbsp; </text>
       <text>填空题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/score/score">   
+  <navigator url="../editor/score/score?id={{id}}">   
       <text class="local-nav-icon-icon4"></text>    
       <text selectable decode>&nbsp; </text>
       <text>打分题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/sort/sort">   
+  <navigator url="../editor/sort/sort?id={{id}}">   
       <text class="local-nav-icon-icon5"></text>   
       <text selectable decode>&nbsp; </text> 
       <text>排序题</text>   
@@ -43,35 +43,35 @@
 <view style="color: rgb(10, 133, 241); font-size: 28rpx;margin-top: 54rpx; margin-left: 34rpx; font-weight: 700;font-family: PingFangSC-bold">进阶题型</view>
 <view class="local-nava">
 <view>
-  <navigator url="../editor/matrixRadio/matrixRadio">   
+  <navigator url="../editor/matrixRadio/matrixRadio?id={{id}}">   
       <text class="local-nava-icon-icon1"></text>    
       <text selectable decode>&nbsp; </text> 
       <text>矩阵单选</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/multipleBlanks/multipleBlanks">   
+  <navigator url="../editor/multipleBlanks/multipleBlanks?id={{id}}">   
       <text class="local-nava-icon-icon2"></text>    
       <text selectable decode>&nbsp; </text> 
       <text>多项填空</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/dropDown/dropDown">   
+  <navigator url="../editor/dropDown/dropDown?id={{id}}">   
       <text class="local-nava-icon-icon4"></text>    
       <text selectable decode>&nbsp; </text> 
       <text>下拉题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/scale/scale">   
+  <navigator url="../editor/scale/scale?id={{id}}">   
       <text class="local-nava-icon-icon5"></text>    
       <text selectable decode>&nbsp; </text> 
       <text>量表题</text>   
   </navigator>
 </view>
 <view>
-  <navigator url="../editor/proportion/proportion">   
+  <navigator url="../editor/proportion/proportion?id={{id}}">   
       <text class="local-nava-icon-icon3"></text> 
       <text selectable decode>&nbsp; </text>    
       <text>比重题</text>   

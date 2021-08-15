@@ -1,0 +1,9 @@
+<text class="send">
+    您将发消息给xx个朋友
+</text>
+<text class="friends">
+    小、白、啊呀
+</text>
+<view class="space">
+    <textarea type="text" class="group-input" placeholder="请输入内容" />
+</view>

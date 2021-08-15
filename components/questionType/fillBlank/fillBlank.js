@@ -4,7 +4,9 @@ Component({
      * 组件的属性列表
      */
     properties: {
-
+       option: {
+         type: Object
+       }
     },
 
     /**
@@ -13,7 +15,6 @@ Component({
     data: {
 
     },
-
     /**
      * 组件的方法列表
      */

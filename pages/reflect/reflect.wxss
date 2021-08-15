@@ -1,0 +1,78 @@
+.yu{
+
+    font-weight: 550;
+    font-size: 40rpx;
+    color: rgb(8, 8, 8);
+    margin-top: 10rpx;
+  
+  }
+  
+  .yu-num {
+  
+    font-weight: 500;
+    font-size: 72rpx;
+    color: rgb(8, 8, 8);
+  }
+  
+  .fastRecharge {
+    padding: 42rpx 34rpx 70rpx 34rpx;
+    background-color: #fff;
+    margin-bottom: 20rpx;
+  }
+  .recharge_row {
+     display: flex;
+     justify-content: space-between;
+  }
+  
+  .Recharge {
+    width: 200rpx;
+    height: 200rpx;
+    border: 2rpx solid #BBBBBB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56rpx 28rpx 34rpx 28rpx;
+    
+  }
+  
+  .rechargeNum_row {
+    display: flex; 
+    align-items: flex-end;
+    justify-content: center; 
+  }
+  
+  .rechargeNum {
+    font-size: 56rpx;
+    font-weight: 600;
+  }
+  
+  .rmbNum {
+    font-size: 24rpx;
+  }
+  
+  .add, .sub {
+    background-color: #F5F7FA;
+  }
+  
+  .account image {
+    margin-left: 10rpx;
+    margin-top: 10rpx;
+    width: 30rpx;
+    height: 15rpx;
+  }
+  
+  .customExchange {
+    background-color: #fff;
+    padding: 28rpx 34rpx 32rpx 36rpx;
+  }
+  
+  .customExchange_row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .withdrawal {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0 34rpx 0 40rpx;
+  }

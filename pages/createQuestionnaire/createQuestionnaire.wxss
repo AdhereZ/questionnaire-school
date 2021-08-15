@@ -1,3 +1,6 @@
+page {
+    padding-bottom: 130rpx;
+}
 .QaTitle {
     background-color: #fff;
     padding: 8rpx 48rpx 0 20rpx;
@@ -16,6 +19,8 @@
     background-color: #fff;
     padding: 8rpx 14rpx 34rpx 20rpx;
     box-shadow: 0 6rpx 22rpx -20rpx rgba(0, 0, 0, 0.4);
+    margin-bottom: 50rpx;
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.4);
 }
 
 .describeInput {
@@ -53,7 +58,8 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 64rpx;
+    padding-bottom: 30rpx;
+    z-index: 1;
     
 }
 .option_btn { 

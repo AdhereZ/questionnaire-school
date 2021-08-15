@@ -39,19 +39,19 @@
                 {
                     "name": "单选编辑",
                     "pathName": "pages/editor/single/single",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "排序编辑",
                     "pathName": "pages/editor/sort/sort",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "打分编辑",
                     "pathName": "pages/editor/score/score",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
@@ -63,13 +63,13 @@
                 {
                     "name": "多选编辑",
                     "pathName": "pages/editor/multipleChoice/multipleChoice",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "填空编辑",
                     "pathName": "pages/editor/fillBlanks/fillBlanks",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
@@ -105,18 +105,36 @@
                 {
                     "name": "问卷创建",
                     "pathName": "pages/createQuestionnaire/createQuestionnaire",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "题型选择",
                     "pathName": "pages/chooseType/chooseType",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "问卷预览",
                     "pathName": "pages/preview/preview",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "初步问卷创建",
+                    "pathName": "pages/firstCreate/firstCreate",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/myBT/myBT",
+                    "pathName": "pages/demo02/demo02",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/transactionRecord/transactionRecord",
+                    "pathName": "pages/transactionRecord/transactionRecord",
                     "query": "",
                     "scene": null
                 }

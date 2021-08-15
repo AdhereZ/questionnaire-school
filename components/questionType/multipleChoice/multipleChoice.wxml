@@ -1,10 +1,16 @@
-<!--components/multipleChoice/multipleChoice.wxml-->
-<view class="mulChoice">
-    <view class="mulChoice_row" wx:for="{{title}}" wx:key="{{item.id}}" >
-        <view style="display: flex; align-items: center;" bindtap="handleClick" data-index="{{index}}">
-            <myRadio style="margin-top: 15rpx" isChecked="{{item.isChecked}}"></myRadio>
-        <view style="margin-right: 25rpx;">{{item.value}}</view>
+<view class="{{isFlex ?  'flextype' : ''}}">
+    <view wx:for="{{option}}" wx:key="{{item.id}}"  bindtap="mradioChange" data-idx="{{index}}" class="singleOption">
+        <view wx:if="{{item.type_id===1}}" class="single1">
+            <my-radio isChecked="{{item.isAnswer}}">{{item.optionContent}}</my-radio>
+        </view>      
+            <view wx:if="{{item.type_id===2}}" class="single2">
+                <image src="{{item.optionContent}}"></image>
+                <my-radio isChecked="{{item.isAnswer}}"></my-radio>
+            </view>
+
+        <view wx:if="{{item.type_id===3}}" class="single3">
+            <my-radio isChecked="{{item.isAnswer}}">{{item.optionContent}}</my-radio>
+            <input type="text" wx:if="{{item.isAnswer}}" placeholder="请输入"/>
         </view>
-        <input type="text" placeholder="填空项（20字内）" wx:if="{{item.isChecked}}"/>
-    </view>
+        </view>
 </view>

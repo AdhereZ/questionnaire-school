@@ -1,18 +1,38 @@
-// pages/createQuestionnaire/createQuestionnaire.js
+const db = wx.cloud.database();
+const questionnaire = db.collection('questionnaire');
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        id: null,
+        title: '',
+        describe: '',
+        questions: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+          
+          questionnaire.where({
+              _id:options.id
+          })
+          .get()
+          .then(res=> {
+            //   console.log(res);
+              this.setData({
+                  title: res.data[0].title,
+                  describe: res.data[0].describe,
+                  id: res.data[0]._id,
+                  questions:res.data[0].questions
+              })
+          })
+          .catch(err=> {
+              console.log('错误',err);
+          })
     },
 
     /**

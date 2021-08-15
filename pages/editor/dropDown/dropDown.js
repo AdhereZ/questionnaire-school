@@ -1,4 +1,4 @@
-// pages/editor/single/single.js
+
 Page({
 
     /**

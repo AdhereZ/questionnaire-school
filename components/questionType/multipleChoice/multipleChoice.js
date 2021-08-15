@@ -4,43 +4,49 @@ Component({
      * 组件的属性列表
      */
     properties: {
-
-    },
-
-    /**
-     * 组件的初始数据
-     */
-    data: {
-      title: [
-          {
-              id:1,
-              value:'标题1',
-              isChecked:false
+      option: {
+        type: Object,
+        value: [
+          {   
+              id: '001',
+              value: '选项1',
+              isAnswer: false
           },
           {
-            id:2,
-            value:'标题2',
-            isChecked:false
-        },
-        {
-            id:3,
-            value:'标题3',
-            isChecked:false
-        }
+              id: '002',
+              value: '选项1',
+              isAnswer: false
+          },
+          {
+              id: '003',
+              value: '选项1',
+              isAnswer: false
+          }
       ]
+    }
     },
 
-    /**
-     * 组件的方法列表
-     */
-    methods: {
-        handleClick(e) {
-        
-          let {index} = e.currentTarget.dataset
-          let {title} = this.data
-          title[index].isChecked = !title[index].isChecked
+    data: {
+      isFlex:false
+    },
+
+    ready() {
+      console.log(this.data.option);
+      if(this.data.option[0].type_id===2) {
           this.setData({
-              title
+              isFlex:true
+          })
+      }
+  },
+    methods: {
+      mradioChange(e) {
+        
+          let {idx} = e.currentTarget.dataset
+          let {option} = this.data
+          option[idx].isAnswer = ! option[idx].isAnswer
+          console.log();
+          this.setData({
+            option
           })
         }
     }

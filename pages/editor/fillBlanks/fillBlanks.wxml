@@ -1,5 +1,6 @@
+<form bindsubmit="handleSubmit">
 <view class="question">
-    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle"></textarea>
 </view>
 
 
@@ -14,16 +15,17 @@
     </view>
     <view class="selectBar setupLine">
         <view>答题限制</view>
-        <select prop-array="{{selectArray}}"></select>
+        <select prop-array="{{selectArray}}" bindgetSelect="getSelect"></select>
     </view>
     <view class="maxWord setupLine">
         <view>字数限制</view>
         <view style="font-size: 24rpx; color: #A59F9F; margin: 0 12rpx 0 347rpx">最大值</view>
-        <input type="text" placeholder="100以下"/>
+        <input type="text" placeholder="100以下" name="word_num" value="100"/>
     </view>
 </view>
 
 
-<button class="submit">确认</button>
+<button class="submit" form-type="submit">确认</button>
+</form>
 
 

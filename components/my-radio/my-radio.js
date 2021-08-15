@@ -5,7 +5,6 @@ Component({
     properties: {
        problem: {
           type: String,
-          value:'选项1'
        },
        isChecked: {
            type: Boolean,

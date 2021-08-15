@@ -1,0 +1,54 @@
+<!--pages/demo04/demo04.wxml-->
+<view class="detail">
+    <view class="day-1">
+        <view class="word">转账</view> 
+        <view class="time">2021-07-24</view>  
+    </view>
+    
+    <view class="day-2">
+        <view class="konge">余额:0.00</view>
+        <view class="time-1"> -20.00</view>
+  </view>
+  </view>
+  
+  <view class="detail">
+    <view class="day-1">
+        <view class="word">转账</view> 
+        <view class="time">2021-07-24</view>  
+    </view>
+    
+    <view class="day-2">
+        <view class="konge">余额:0.00</view>
+        <view class="time-1"> -20.00</view>
+  </view>
+  </view>
+  
+  <view class="detail">
+    <view class="day-1">
+        <view class="word">转账</view> 
+        <view class="time">2021-07-24</view>  
+    </view>
+    
+    <view class="day-2">
+        <view class="konge">余额:0.00</view>
+        <view class="time-1"> -20.00</view>
+  </view>
+  </view>
+  
+  <view class="detail">
+    <view class="day-1">
+        <view class="word">转账</view> 
+        <view class="time">2021-07-24</view>  
+    </view>
+    
+    <view class="day-2">
+        <view class="konge">余额:0.00</view>
+        <view class="time-1"> -20.00</view>
+  </view>
+  </view>
+  
+  
+  
+  
+  
+  

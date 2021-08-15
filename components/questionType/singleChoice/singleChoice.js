@@ -4,30 +4,37 @@ Component({
      * 组件的属性列表
      */
     properties: {
-
-    },
-
-    /**
-     * 组件的初始数据
-     */
-    data: {
-        problem: [
+      option: {
+          type: Object,
+          value: [
             {   
                 id: '001',
                 value: '选项1',
-                isChecked: false
+                isAnswer: false
             },
             {
                 id: '002',
                 value: '选项1',
-                isChecked: false
+                isAnswer: false
             },
             {
                 id: '003',
                 value: '选项1',
-                isChecked: false
+                isAnswer: false
             }
         ]
+      }
+    },
+    data: {
+        isFlex:false
+    },
+    ready() {
+        console.log(this.data.option);
+        if(this.data.option[0].type_id===2) {
+            this.setData({
+                isFlex:true
+            })
+        }
     },
 
     /**
@@ -36,13 +43,13 @@ Component({
     methods: {
         mradioChange(e) {
            const {idx} = e.currentTarget.dataset
-           let {problem} = this.data
-           problem.forEach(v=> {
-               v.isChecked=false
+           let {option} = this.data
+           option.forEach(v=> {
+               v.isAnswer=false
            })
-           problem[idx].isChecked=true
+           option[idx].isAnswer=true
         this.setData({
-            problem
+            option
         })
         }
     }

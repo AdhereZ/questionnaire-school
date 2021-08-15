@@ -1,0 +1,71 @@
+
+<view style="background-color: #fff; height: 182rpx; padding: 60rpx 40rpx 0 34rpx; display: flex; justify-content: space-between; margin-bottom: 20rpx;" >
+    <view class="yu">
+      BT币余额
+    </view>
+    
+    <view class="yu-num">
+      55
+    </view>
+  </view>
+  
+  <view class="fastRecharge">
+  <view style="font-size: 40rpx; font-weight: 700; margin-bottom: 60rpx;">快速充值</view>
+  <view class="recharge_row">
+    <view class="Recharge">
+      <view class="rechargeNum_row">
+        <view class="rechargeNum">500</view>
+      <view style="margin-bottom: 8rpx;">BT</view>
+      </view>
+      <view class="rmbNum">10元</view>
+    </view>
+    <view class="Recharge">
+      <view class="rechargeNum_row">
+        <view class="rechargeNum">1500</view>
+      <view style="margin-bottom: 8rpx;">BT</view>
+      </view>
+      <view class="rmbNum">20元</view>
+    </view>
+    <view class="Recharge">
+      <view class="rechargeNum_row">
+        <view class="rechargeNum">1500</view>
+      <view style="margin-bottom: 8rpx;">BT</view>
+      </view>
+      <view class="rmbNum">30元</view>
+    </view>
+  </view>
+  </view>
+  
+  
+  <!-- 自定义兑换 -->
+  <view class="customExchange">
+   <view style="font-size: 40rpx; font-weight: 700; margin-bottom: 46rpx;">自定义兑换</view>
+  <view class="customExchange_row">
+    <view class="rechargeNum_row">
+      <view class="rechargeNum">10</view>
+    <view style="margin-bottom: 8rpx;">元</view>
+    </view>
+    <view style="font-size: 110rpx; margin: 0 30rpx 0 30rpx; height: 64rpx; line-height: 64rpx;">×</view>
+  
+    <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
+      <input type="text" value="{{leastNum}}" bindblur="changeLeastNum" style=" width: 98rpx; height: 80rpx; padding-left: 28rpx; border: 1px solid #DCDFE6;"/>
+      <view class="account">
+          <view class="add" bindtap="leastAdd" style="height: 40rpx; width: 80rpx; padding: 0 0 0 16rpx;" >
+              <image mode="widthFix" src="/img/icons/arrow_up2.png" wx:if="{{leastAddFlag}}"></image>
+              <image mode="widthFix" src="/img/icons/arrow_up1.png" wx:else></image>
+          </view>
+          <view class="sub" bindtap="leastSub" style="height: 40rpx; width: 80rpx; padding: 0 0 0 16rpx;">
+              <image mode="widthFix" src="/img/icons/arrow_down2.png" wx:if="{{leastSubFlag}}"></image>
+              <image mode="widthFix" src="/img/icons/arrow_down1.png" wx:else></image>
+          </view>
+      </view>
+     </view>
+  
+     <image src="/img/withdrawal.png" mode="widthFix" class="withdrawal"></image>
+     <view style="width: 196rpx; height: 80rpx; border: 2rpx solid #BBBBBB; padding-left: 10rpx;"></view>
+  </view>
+  
+      <button style="width: 176rpx; height: 60rpx;  line-height: 60rpx; border: 2rpx solid #BBBBBB; background-color: #fff; font-size: 28rpx; margin-top: 58rpx;">确认兑换</button>
+  </view>
+  
+  

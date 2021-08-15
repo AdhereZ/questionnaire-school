@@ -30,6 +30,10 @@
     margin-bottom: 14rpx;
 }
 
+.picture {
+    margin-right: 20rpx;
+  }
+
 .inputText image {
     flex: 1;
     width: 48rpx;
@@ -112,6 +116,18 @@
     width: 30rpx;
     height: 15rpx;
 }
+checkbox .wx-checkbox-input{
+    border-radius: 50%;/* 圆角 */
+    width: 40rpx; /* 背景的宽 */
+    height: 40rpx; /* 背景的高 */
+  }
+
+
+  /* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+  checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+    border: 1rpx solid #5677fc !important;
+    background: #5677fc !important;
+  }
 
 
 

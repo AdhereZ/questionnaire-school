@@ -14,7 +14,7 @@ page {
 button {
     width: 610rpx !important;
     height: 96rpx !important;
-    line-height: 70rpx !important;
+    line-height: 96rpx !important;
     color: #fff;
     background-color: #93c038;
     position: absolute;

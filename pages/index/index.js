@@ -3,7 +3,7 @@
 Page({
  data: {
   //  tabbar按键
-  flag: 2,
+  flag: 3,
  },
  indexTap() {
    this.setData({
