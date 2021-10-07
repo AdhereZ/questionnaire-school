@@ -1,36 +1,24 @@
 // components/questionType/multipleBlanks/multipleBlanks.js
 Component({
-    /**
-     * 组件的属性列表
-     */
     properties: {
-
-    },
-
-    /**
-     * 组件的初始数据
-     */
-    data: {
-       title:[
-           {
-               id:1,
-               value:'标题1'
-           },
-           {
-            id:2,
-            value:'标题2'
+        option: {
+            type: Array
         },
-        {
-            id:3,
-            value:'标题3'
-        }
-       ]
+        typecode: Number
+    },
+    data: {
     },
 
-    /**
-     * 组件的方法列表
-     */
     methods: {
-
+        inputBlur(e) {
+            console.log(e);
+            let { option } = this.data
+            let { idx } = e.currentTarget.dataset
+            let { value } = e.detail
+            option[idx].answer = value
+            this.setData({
+                option
+            })
+        }
     }
 })

@@ -5,14 +5,21 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        questionnaire: {},
+        questions: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+          let questionnaire = wx.getStorageSync('questionnaire')
+          let {questions} = questionnaire
+          console.log(questionnaire);
+          this.setData({
+            questionnaire,
+            questions
+          })
     },
 
     /**

@@ -1,64 +1,12 @@
-<view class='createdQA'>
+<view class='createdQA' wx:for="{{questionnaires}}" wx:key="{{item._id}}" >
     <view class="lastOperationtime">
-        2021.7.20/14:10:59
+{{item.publishTime.year}}.{{item.publishTime.month}}.{{item.publishTime.date}}/{{item.publishTime.hour}}:{{item.publishTime.minute}}:{{item.publishTime.second}}
         </view>   
    <view class="qTitle">
-    关于xxxx的问卷
+    {{item.title}}
 </view>
  <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
     <view class="finishPercent">发布中</view>
-    <view class="queestionNum">查看数据</view>
- </view>
-</view>
-
-<view class='createdQA'>
-    <view class="lastOperationtime">
-        2021.7.20/14:10:59
-        </view>   
-   <view class="qTitle">
-    关于xxxx的问卷
-</view>
- <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
-    <view class="finishPercent">发布中</view>
-    <view class="queestionNum">查看数据</view>
- </view>
-</view>
-
-<view class='createdQA'>
-    <view class="lastOperationtime">
-        2021.7.20/14:10:59
-        </view>   
-   <view class="qTitle">
-    关于xxxx的问卷
-</view>
- <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
-    <view class="finishPercent">发布中</view>
-    <view class="queestionNum">查看数据</view>
- </view>
-</view>
-
-<view class='createdQA'>
-    <view class="lastOperationtime">
-        2021.7.20/14:10:59
-        </view>   
-   <view class="qTitle">
-    关于xxxx的问卷
-</view>
- <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
-    <view class="finishPercent">发布中</view>
-    <view class="queestionNum">查看数据</view>
- </view>
-</view>
-
-<view class='createdQA'>
-    <view class="lastOperationtime">
-        2021.7.20/14:10:59
-        </view>   
-   <view class="qTitle">
-    关于xxxx的问卷
-</view>
- <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
-    <view class="finishPercent">发布中</view>
-    <view class="queestionNum">查看数据</view>
+    <navigator class="queestionNum" url="/pages/collectData/collectData?id={{item._id}}">查看数据</navigator>
  </view>
 </view>

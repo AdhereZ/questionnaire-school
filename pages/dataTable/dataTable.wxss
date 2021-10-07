@@ -1,5 +1,5 @@
-.createdQA { 
-    display: inline-block; 
+.createdQA {
+    display: inline-block;
     width: 346rpx;
     margin: 20rpx 0rpx 0rpx 16rpx;
     padding-top: 20rpx;
@@ -7,6 +7,7 @@
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
+
 .box1:nth-child(2n-1) {
     margin-left: 18rpx;
 }
@@ -14,23 +15,32 @@
 .box1:nth-child(2n) {
     margin-right: 24rpx;
 }
+
 .lastOperationtime {
     margin-left: 32rpx;
     font-size: 24rpx;
 }
 
 .qTitle {
-    margin: 34rpx 0 0 32rpx;
+    margin: 10rpx 0 0 32rpx;
     height: 66rpx;
+    line-height: 66rpx;
     font-size: 40rpx;
     text-align: left;
     font-weight: 700;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
+
 .finishPercent {
     float: left;
     color: #FF0000;
     font-size: 24rpx;
 }
+
 .queestionNum {
     float: right;
     color: #2D77FB;

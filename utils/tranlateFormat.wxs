@@ -1,0 +1,7 @@
+function translate(a,b) {
+    return (a/b*100).toFixed(0) + '%'
+}
+
+module.exports = {
+    translate: translate
+}

@@ -1,0 +1,21 @@
+.tableArea {
+    width: 680rpx;
+    border: 4rpx solid #000;
+    border-radius: 26rpx;
+}
+.numRow {
+    display: flex; 
+    align-items: center;
+    padding: 4rpx 46rpx 4rpx 34rpx;
+    font-weight: 700;
+    width: 680rpx;
+    
+}
+
+.average {
+    display: flex; 
+    align-items: center;
+    font-weight: 700;
+    width: 680rpx;
+    padding: 4rpx 46rpx 4rpx 34rpx;
+}

@@ -1,5 +1,6 @@
-<view class="question">
-    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+<form bindsubmit="handleSubmit">
+  <view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
 </view>
 
 
@@ -7,7 +8,7 @@
 <view class="option" > 
     <view class="inputText" wx:for="{{option}}" wx:key="{{item.option_id}}" >
         <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
-        <input type="text" placeholder="输入选项（50字内）"/>    
+        <input type="text" placeholder="输入选项（50字内）" name="标题{{index+1}}" value="{{item.optionContent}}" data-index="{{index}}" bindinput="handleInput"/>    
     </view>
 
   <view class="addoption">
@@ -18,21 +19,21 @@
 </view>
 
 <view>
-    <view class="dropTables" wx:for="{{option}}" wx:for-item="item1" wx:for-index="index1" wx:key="{{item1.option_id}}">
-        <view style="margin-left: 18rpx;">下拉菜单{{index1+1}}</view>
+   
+        <view style="margin-left: 18rpx;">下拉菜单</view>
     <view class="dropTablesOption"> 
-        <view class="inputText" wx:for="{{option[index1].dropOption}}" wx:for-item="item2" wx:for-index="index2" wx:key="{{item2.id}}" >
-            <view bindtap="deleteDropOption" data-id1="{{index1}}" data-id2="{{index2}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
-            <input type="text" placeholder="输入选项（50字内）"/>    
+        <view class="inputText" wx:for="{{dropOption}}" wx:for-item="item2" wx:for-index="index2" wx:key="{{item2.id}}" >
+            <view bindtap="deleteDropOption" data-id2="{{index2}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
+            <input type="text" placeholder="输入选项（50字内）" name="下拉{{index2+1}}" data-index="{{index2}}" value="{{item2.text}}" bindinput="handleDropInput"/>    
         </view>
     
       <view class="addoption">
-          <view bindtap="addDropOption" data-id1="{{index1}}"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+          <view bindtap="addDropOption" ><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
         </view>
       </view>
       
     </view>
-    </view>
+    
 </view>
 
 
@@ -49,4 +50,5 @@
     
 </view>
 
-<button class="submit">确认</button>
+<button class="submit" form-type="submit">确认</button>
+</form>

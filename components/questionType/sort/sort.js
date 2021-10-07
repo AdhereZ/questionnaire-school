@@ -5,8 +5,9 @@ Component({
      */
     properties: {
       option: {
-          type: Object
-      }
+          type: Array
+      },
+      typecode: Number
     },
 
     /**
@@ -15,11 +16,17 @@ Component({
     data: {
       count: [
 
-      ]
+      ],
+      isFlex:false
     },
     
     ready() {
         console.log(this.data.option);
+        if(this.data.option[0].type_id===2) {
+            this.setData({
+                isFlex:true
+            })
+        }
     },
 
     methods: {
@@ -44,6 +51,13 @@ Component({
                 option,
                 count 
             })
-        }
+        },
+        previewImage(e) {  
+            var current=e.target.dataset.src;
+            wx.previewImage({
+                  current: current, // 当前显示图片的http链接
+                  urls: [current] // 需要预览的图片http链接列表
+            })
+        }  
     }
 })

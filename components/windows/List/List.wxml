@@ -1,22 +1,28 @@
 <!-- 框架 -->
-<navigator class="Frame">
-    <!-- 标题 -->
-    <view class="Title">
-        大学生未来时间规划以及学业
-        焦虑调查问卷
+<navigator class="Frame" url="/pages/questionnaire/questionnaire?id={{publishQ._id}}">
+    <view class="dark" wx:if="{{idx === 2}}">
+        <view style="position: absolute; bottom: 20rpx; right: 40rpx; font-weight: 700; color: green;">已完成</view>
     </view>
-    <!-- bt币 -->
-    <view class="Gain">
-        +60BT
+    <!-- 标题 -->
+    <view style="display: flex; justify-content: space-between; margin-bottom: 15rpx;">
+        <view class="Title">
+            {{publishQ.title}}
+        </view>
+        <!-- bt币 -->
+        <view class="Gain" style="display: inline-block;">
+            +60BT
+        </view>
     </view>
     <!-- 正文 -->
     <view class="Text">
-        各位同学，本次调查是为了了解大学生的未来时间规划及学业的状况，问卷内容仅用于数据分析。问卷共53道题，......
+        {{publishQ.describe}}
     </view>
-    <!-- 题目数量 -->
-    <view class="Ques">共50题</view>
-    <!-- 剩余份数 -->
-    <view class="Remain">剩30份</view>
+    <view style="display: flex;">
+        <!-- 题目数量 -->
+        <view class="Ques">共{{publishQ.questions.length}}题</view>
+        <!-- 剩余份数 -->
+        <view class="Remain">剩30份</view>
+    </view>
     <!-- 类型 -->
-    <view class="Type">校外问卷</view>
+    <!-- <view class="Type">校外问卷</view> -->
 </navigator>

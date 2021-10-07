@@ -1,7 +1,7 @@
 <form bindsubmit="handleSubmit">
 <view class="QaTitle">
     <view style="font-weight: 700;font-family: SFUIText-bold; font-size: 36rpx;">问卷标题</view>
-        <textarea type="text" class="titleInput" placeholder="输入标题（100字内）" bindblur="handleInput" name="title"></textarea>
+        <textarea type="text" class="titleInput" placeholder="输入标题（100字内）" bindinput="handleInput" name="title"></textarea>
 </view>
 
 <!-- <view class="describe">

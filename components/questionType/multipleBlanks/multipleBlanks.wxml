@@ -1,6 +1,6 @@
 <view class="mulBlanks">
-    <view class="mulBlanks_row" wx:for="{{title}}" wx:key="{{item.id}}">
-        <view class="title">{{item.value}}</view>
-        <input type="text" placeholder="请输入"/>
+    <view class="mulBlanks_row" wx:for="{{option}}" wx:key="{{item.option_id}}">
+        <view class="title">{{item.optionContent}}</view>
+        <input type="text" placeholder="请输入" bindblur="inputBlur" data-idx="{{index}}"/>
     </view>
 </view>

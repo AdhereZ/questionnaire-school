@@ -12,12 +12,12 @@
       </image> 
       <view class="tabbar-text">问卷</view>
     </view>
-    <navigator class="action add-action box" bindtap="createquestionTap" url="../createQuestionnaire/createQuestionnaire">
+    <view class="action add-action box" bindtap="createquestionTap">
       <image class="tabbar-center-img" src="../../img/tabbar/cj2.png" mode="widthFix"  wx:if="{{flag==4}}"></image>
       <image class="tabbar-center-img" src="../../img/tabbar/cj1.png" mode="widthFix" wx:else>
       </image> 
       <view class="tabbar-text">发布</view>
-    </navigator>
+    </view>
     <view class="action" bindtap="informationTap">
       <image class="tabbar-img" src="../../img/tabbar/xx2.png" mode="widthFix"  wx:if="{{flag==2}}"></image>
       <image class="tabbar-img" src="../../img/tabbar/xx1.png" mode="widthFix" wx:else>

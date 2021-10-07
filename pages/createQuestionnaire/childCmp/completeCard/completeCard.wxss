@@ -1,5 +1,41 @@
 .complete-card {
+    position: relative;
     background-color: #fff;
     padding: 12rpx 20rpx 30rpx 20rpx;
+
+}
+
+.cover {
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color:rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.editor {
+    background-color: #fafbff; 
+    padding: 15rpx 40rpx; 
+    display: flex;
+    align-items: center;
+    border-top: 2rpx solid #e0dfe0;
+    
+}
+
+.editorImg_row {
+    flex: 1;
+    font-size: 24rpx;
+    color: #5677fc;
+}
+
+.editorImg_row image{
+    width: 40rpx;
+    height: 40rpx;
     margin-bottom: 10rpx;
+}
+
+.borderBlue {
+    border: 2rpx solid #5677fc;
 }

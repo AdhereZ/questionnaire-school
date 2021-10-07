@@ -48,7 +48,7 @@
     <view style="font-size: 110rpx; margin: 0 30rpx 0 30rpx; height: 64rpx; line-height: 64rpx;">×</view>
   
     <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
-      <input type="text" value="{{leastNum}}" bindblur="changeLeastNum" style=" width: 98rpx; height: 80rpx; padding-left: 28rpx; border: 1px solid #DCDFE6;"/>
+      <input type="text" value="{{leastNum}}" bindinput="changeLeastNum" style=" width: 98rpx; height: 80rpx; padding-left: 28rpx; border: 1px solid #DCDFE6;"/>
       <view class="account">
           <view class="add" bindtap="leastAdd" style="height: 40rpx; width: 80rpx; padding: 0 0 0 16rpx;" >
               <image mode="widthFix" src="/img/icons/arrow_up2.png" wx:if="{{leastAddFlag}}"></image>

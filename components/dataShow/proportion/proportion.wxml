@@ -1,0 +1,32 @@
+<button bindtap="switch" class="switch">切换</button>
+<view class="my-charts">
+    <Histogram answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 1}}" typecode="10"></Histogram>
+    <barChart answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 2}}" typecode="10"></barChart>
+    <pieChart answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 3}}" typecode="10"></pieChart>
+</view>
+
+<view class="tableArea">
+    <view class="numRow">
+     <view>填写人数</view>
+     <image src="/img/icons/arrow-down-bold.png" mode="widthFix" class="drop" bindtap="{{ createdFlag ? 'show' : 'hide' }}"></image>
+     <view>{{answerPersonNum}}</view>
+    </view>
+     <view class="table" animation="{{animationData}}" wx:if="{{choose}}" style="height: {{height2}};">
+         <view class="th">
+             <view class="tr1 tr">
+                 选项
+             </view>
+             <view class="tr3 tr">
+                 比例
+             </view>
+         </view>
+         <view class="th" wx:for="{{answerOption}}" wx:key="{{index}}">
+             <view class="tr1 tr">
+                {{item.optionContent}}
+             </view>
+             <view class="tr3 tr">
+                <view>{{item.percent}} </view>
+             </view>
+         </view>
+     </view>
+ </view>

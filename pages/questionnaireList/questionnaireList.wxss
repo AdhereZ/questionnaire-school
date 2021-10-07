@@ -56,26 +56,37 @@ page {
 .lastOperationtime {
     margin-left: 32rpx;
     font-size: 24rpx;
+    margin-right: 60rpx;
 }
 
 .qTitle {
-    margin: 34rpx 0 0 32rpx;
+    margin: 20rpx 0 0 32rpx;
     height: 66rpx;
+    line-height: 66rpx;
     font-size: 40rpx;
     text-align: left;
     font-weight: 700;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
 .finishPercent {
-    float: left;
+    margin-right: 70rpx;
     color: #626262;
     font-size: 24rpx;
 }
 
 .queestionNum {
-    float: right;
     color: #626262;
     font-size: 24rpx;
+    width: 150rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: right;
+    color: #2d79fb;
 }
 
 

@@ -1,0 +1,9 @@
+<view class="code_row"> 
+  <view style="margin-right: 150rpx; margin-left: 100rpx;">生成二维码</view>
+  <image src="{{qrCode}}" mode="widthFix" bindtap="preview" data-src="{{qrCode}}" style="width: 200rpx; height: 200rpx;"></image>
+</view>
+
+<view class="code_row"> 
+    <view style="margin-right: 220rpx; margin-left: 100rpx;">直接转发</view>
+    <button class="cu-btn round" style="background-color: #2d79fb; color:#fff;" open-type="share">转发</button>
+  </view>

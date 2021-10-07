@@ -1,6 +1,6 @@
 <form bindsubmit="handleSubmit">
     <view class="question">
-        <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle"></textarea>
+        <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
     </view>
     
     

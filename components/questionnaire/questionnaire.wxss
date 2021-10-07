@@ -6,6 +6,7 @@ page {
 /* 我发布的 */
 .finished {
    margin-top: 44rpx;
+   margin-bottom: 100rpx;
 }
 
 .createdBar {

@@ -41,7 +41,7 @@ Page({
           wx.showLoading({
             title: '加载中',
           })
-          wx.setStorageSync('userInfo', res.userInfo)
+          
           this.setData({
             userInfo:res.userInfo
           })
@@ -52,6 +52,7 @@ Page({
             }
           )
           .then(res=> {
+            let openid = res.result.openid
             user.where(
               {
                 _openid:res.result.openid
@@ -67,7 +68,9 @@ Page({
                    ...userInfo
                   }
                 })
-              }     
+              }      
+              userInfo.openid = openid
+              wx.setStorageSync('userInfo', userInfo)
               wx.hideLoading()
                 wx.navigateTo({
                   url: '/pages/index/index'

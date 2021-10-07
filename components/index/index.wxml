@@ -1,4 +1,4 @@
 <!-- 列表 -->
 <view class="index-list">
-    <List></List>
+    <List wx:for="{{allPublishQ}}" wx:key="{{item._id}}" publishQ="{{item}}" idx="{{index}}"></List>
 </view>

@@ -1,6 +1,6 @@
-
+<form bindsubmit="handleSubmit">
 <view class="question">
-    <textarea placeholder="请在此处输入问题（200字内）" ></textarea>
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
 </view>
 
 
@@ -15,14 +15,14 @@
     </view>
     <view class="selectBar setupLine">
         <view>答题限制</view>
-        <select prop-array="{{selectArray}}"></select>
+        <select prop-array="{{selectArray}}" bindgetSelect="getSelect" nowText="{{option.type}}"></select>
     </view>
 
     <view class="leastSelect setupLine">
-        <view style="margin-right: 402rpx;">填空框数量</view>
+        <view style="margin-right: 402rpx;" >填空框数量</view>
 
        <view style="border: 1px solid #DCDFE6; border-radius: 8rpx; display: flex; align-items: center;">
-        <input type="text" value="{{leastNum}}" bindblur="changeLeastNum"/>
+        <input type="text" value="{{leastNum}}" bindblur="changeLeastNum" value="{{option.length}}"/>
         <view class="account">
             <view class="add" bindtap="leastAdd" style="height: 27rpx; width: 60rpx; padding: 0 0 0 16rpx;" >
                 <image mode="widthFix" src="../../../img/icons/arrow_up2.png" wx:if="{{leastAddFlag}}"></image>
@@ -37,15 +37,16 @@
     </view>
     
     <view class="fillBlankAreas">
-        <view class="fb" wx:for="{{fillBlanks}}">
+        <view class="fb" wx:for="{{option}}">
             <view>框标题</view>
             <view class="idx">{{index+1}}</view>
-            <input placeholder="标题{{index+1}}"/>
+            <input placeholder="标题{{index+1}}" name="标题{{index+1}}" data-index="{{index}}" value="{{item.optionContent}}" bindinput="handleInput"/>
         </view>
     </view>
 </view>
 
 
-<button class="submit">确认</button>
+<button class="submit" form-type="submit">确认</button>
+</form>
 
 

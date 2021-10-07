@@ -17,6 +17,5 @@ App({
   },
   globalData: {
     userInfo:'',
-    openId:''
   }
 })

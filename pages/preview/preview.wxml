@@ -1,61 +1,62 @@
 <view class="title">
-    <QTitleCard></QTitleCard>
+    <QTitleCard title="{{questionnaire.title}}" describe="{{questionnaire.describe ? questionnaire.describe : '无备注'}}"></QTitleCard>
 </view>
 
-<completeCard>
-   <view style="margin-left: 18rpx;">
-    <singleChoice>
-    </singleChoice>
-   </view>
-</completeCard>
+<view>
+   <completeCard wx:for="{{questions}}" wx:key="{{item.question_id}}" index="{{index}}" question="{{item}}" id="{{id}}" bindtapTrigger="chooseChange">
+       <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 1}}">
+        <singleChoice option="{{item.option}}">
+        </singleChoice>
+       </view>
+   
+       <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 2}}">
+           <multipleChoice option="{{item.option}}" >
+           </multipleChoice>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 3}}">
+           <fillBlank option="{{item.option}}" >
+           </fillBlank>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 4}}">
+           <score option="{{item.option}}" >
+           </score>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 5}}">
+           <sort option="{{item.option}}" >
+           </sort>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 6}}">
+           <matrixRadio lineOption="{{item.lineOption}}" >
+           </matrixRadio>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 7}}">
+           <multipleBlanks option="{{item.option}}" >
+           </multipleBlanks>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 8}}">
+           <dropDown option="{{item.option}}"  >
+           </dropDown>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 9}}">
+           <scale option="{{item.option}}"  leftTab="{{item.leftTab}}" rightTab="{{item.rightTab}}">
+           </scale>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 10}}">
+           <proportion option="{{item.option}}"  totalProportion="{{item.totalProportion}}">
+           </proportion>
+          </view>
+    </completeCard>
+</view>
 
-<completeCard>
-    <view style="margin-left: 18rpx;">
-     <fillBlank></fillBlank>
-    </view>
- </completeCard>
 
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <score></score>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <scale></scale>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <proportion></proportion>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <dropDown></dropDown>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <multipleBlanks></multipleBlanks>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <multipleChoice></multipleChoice>
-    </view>
- </completeCard>
-
- <completeCard>
-    <view style="margin-left: 18rpx;">
-     <matrixRadio></matrixRadio>
-    </view>
- </completeCard>
 
  
 

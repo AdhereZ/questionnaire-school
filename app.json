@@ -30,7 +30,11 @@
         "pages/recharge_detail/recharge_detail",
         "pages/transactionRecord/transactionRecord",
         "pages/reflect_detail/reflect_detail",
-        "pages/reflect/reflect"
+        "pages/reflect/reflect",
+        "pages/collectData/collectData",
+        "pages/questionnaire/questionnaire",
+        "pages/detail/detail",
+        "pages/share/share"
     ],
     "window": {
         "backgroundTextStyle": "light",

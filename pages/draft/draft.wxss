@@ -1,9 +1,15 @@
+page {
+    padding-bottom: 100rpx;
+}
 .draft {
     background-color: #fff;
     padding-left: 44rpx;
     padding-bottom: 10rpx;
+    margin-bottom: 60rpx;
+    box-shadow: 0px 3px 11px -10px rgba(0, 0, 0, 0.4);
 }
 .time {
+    padding-top: 10rpx;
     padding-bottom: 42rpx;
     display: flex;
     color: #A7A7AC;
@@ -55,7 +61,7 @@
 }
 
 .cu-dialog {
-    padding-bottom: 60rpx;
+    padding-bottom: 20rpx;
     background-color: #ebebeb;
 }
 .bottom-bar {

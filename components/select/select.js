@@ -3,9 +3,13 @@ Component({
     /**
      * 组件的属性列表
      */
+    externalClasses: ['parent-class'],
       properties: {
           propArray:{
               type:Array,
+          },
+          nowText: {
+              type: String
           }
       },
     /**
@@ -17,6 +21,15 @@ Component({
           animationData:{},//右边箭头的动画
           activeidx:0,
       },
+      attached() {
+          let {propArray,nowText} = this.data
+         if(nowText === '') {
+             this.setData({
+                nowText: '请选择'
+             })
+         }
+      },
+
     /**
      * 组件的方法列表
      */

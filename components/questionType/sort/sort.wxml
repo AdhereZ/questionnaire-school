@@ -1,5 +1,5 @@
 <view class="{{isFlex ?  'flextype' : ''}}">
-    <view wx:for="{{option}}" wx:key="{{item.id}}"  bindtap="mradioChange" data-idx="{{index}}" class="singleOption">
+    <view wx:for="{{option}}" wx:key="{{item.id}}" class="singleOption">
         <view wx:if="{{item.type_id===1}}" class="single1">
             <view isChecked="{{item.isAnswer}}" bindtap="handleSort" data-idx="{{index}}" style="display:flex; align-items: center;">
                 <view class="sort {{item.sortNum?'bgCheck':''}}">{{item.sortNum ? item.sortNum : ''}}</view>
@@ -7,7 +7,8 @@
             </view>
         </view>      
             <view wx:if="{{item.type_id===2}}" class="single2">
-                <image src="{{item.optionContent}}"></image>
+                <image src="{{item.imageID}}" data-src="{{item.imageID}}" bindtap="previewImage"></image>
+                <view style="margin-bottom: 10rpx;">{{item.optionContent}}</view>
                 <view isChecked="{{item.isAnswer}}" class="sort {{item.sortNum?'bgCheck':''}}" bindtap="handleSort" data-idx="{{index}}">{{item.sortNum ? item.sortNum : ''}}</view>
             </view>
 

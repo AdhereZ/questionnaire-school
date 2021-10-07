@@ -1,0 +1,50 @@
+.tableArea {
+    width: 680rpx;
+    border: 4rpx solid #000;
+    border-radius: 26rpx;
+}
+.numRow {
+    display: flex; 
+    align-items: center;
+    padding: 4rpx 46rpx 4rpx 34rpx;
+    font-weight: 700;
+    width: 680rpx;
+    
+}
+.drop {
+    width: 30rpx;
+    height: 30rpx;
+    margin: 0 242rpx 0 192rpx;
+}
+.th {
+   display: flex;
+   align-items: center;
+   position: relative;
+   border-top: 2rpx solid #000;
+}
+
+.tr {
+    /* float: left; */
+    padding: 10rpx;
+    text-align: center;
+}
+
+.tr1 {
+    width: 356rpx;  
+    line-height: 64rpx;
+    border-right: 2rpx solid #000;
+}
+
+
+
+.tr3 {
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    width: 316rpx;
+}

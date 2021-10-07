@@ -1,24 +1,26 @@
 // components/fillBlank/fillBlank.js
 Component({
-    /**
-     * 组件的属性列表
-     */
-    properties: {
-       option: {
-         type: Object
-       }
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+    option: {
+      type: Object
     },
+    typecode: Number
+  },
+  data: {
 
-    /**
-     * 组件的初始数据
-     */
-    data: {
-
-    },
-    /**
-     * 组件的方法列表
-     */
-    methods: {
-
+  },
+  methods: {
+    inputBlur(e) {
+      console.log(e);
+      let { option } = this.data
+      let { value } = e.detail
+      option.answer = value
+      this.setData({
+        option
+      })
     }
+  }
 })

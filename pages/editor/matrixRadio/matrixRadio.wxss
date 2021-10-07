@@ -42,7 +42,7 @@
 
 .inputText input {
     margin-left: 10rpx;
-    margin-right: 36rpx;
+    margin-right: 80rpx;
     flex: 12;
     font-size: 28rpx;
     color: #888888;

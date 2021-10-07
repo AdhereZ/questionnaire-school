@@ -1,11 +1,30 @@
-<view class="complete-card">
-    <view 
-    style="width: 644rpx; height: 44rpx; font-weight: 700; margin-bottom: 32rpx;"
-    >Q{{index+1}}：{{question.questionTitle}}
-     <text wx:if="{{question.required}}" style="color: red;">*</text>
-     <text wx:if="{{question.typecode === 2}}">（多选）</text>
-  </view>
-  <view>
-      <slot></slot>
-  </view>
+<view bindtap="handleChoose" style="margin-bottom: 20rpx;" class="{{choose ? 'borderBlue' : ''}}">
+    <view class="complete-card">
+        <view class="cover">
+        </view>
+        <view style="width: 644rpx; height: 44rpx; font-weight: 700; margin-bottom: 32rpx;">
+            Q{{index+1}}：{{question.questionTitle}}
+            <text wx:if="{{question.required}}" style="color: red;">*</text>
+            <text wx:if="{{question.typecode === 2}}">（多选）</text>
+            <text wx:if="{{question.typecode === 5}}">（依次选择）</text>
+        </view>
+        <view>
+            <slot></slot>
+        </view>
+    </view>
+    
+    <view class="editor" wx:if="{{choose}}">
+        <view class="editorImg_row" bindtap="questionEditor" style="display: flex;  align-items: center; justify-content: center;">
+            <view style="width: 50rpx; display: flex; align-items: center; flex-direction: column;">
+                <image src="/img/TitleEditor/editor1.png" mode="widthFix"></image>
+                <view>编辑</view>
+            </view>
+        </view>
+        <view class="editorImg_row" bindtap="questionRemove" style="display: flex;  align-items: center; justify-content: center;">
+            <view style="width: 50rpx; display: flex; align-items: center; flex-direction: column;">
+                <image src="/img/TitleEditor/trash1.png" mode="widthFix"></image>
+                <view>删除</view>
+            </view>
+        </view>
+    </view>
 </view>

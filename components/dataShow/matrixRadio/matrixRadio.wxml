@@ -1,0 +1,9 @@
+<view class="my-charts">
+    <multiHistogram answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" typecode="6" wx:if="{{graph === 1}}"></multiHistogram>    
+</view>
+
+
+<view wx:for="{{answerOption}}" wx:key="{{index}}" style="margin-top: 30rpx">
+    <view style="margin-bottom: 15rpx">{{item.optionContent}}</view>
+<table answerOption="{{item.columnOption}}" answerPersonNum="{{answerPersonNum}}" typecode="6"></table>
+</view>

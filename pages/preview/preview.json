@@ -10,7 +10,8 @@
     "dropDown": "/components/questionType/dropDown/dropDown",
     "multipleBlanks": "/components/questionType/multipleBlanks/multipleBlanks",
     "multipleChoice": "/components/questionType/multipleChoice/multipleChoice",
-    "matrixRadio": "/components/questionType/matrixRadio/matrixRadio"
+    "matrixRadio": "/components/questionType/matrixRadio/matrixRadio",
+    "sort": "/components/questionType/sort/sort"
     
 
     

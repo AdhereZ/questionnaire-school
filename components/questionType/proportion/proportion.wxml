@@ -1,27 +1,39 @@
-<slider block-size="16" activeColor="#1684fc" min="0" max="100" bindchange="handleChange"></slider>
-<view class="mark_row">
+<view wx:for="{{option}}" wx:key="{{item.option_id}}" style="margin-bottom: 100rpx;">
+    <view style="display: flex; align-items: center;">
+        <view style="margin-right: 40rpx;">{{item.optionContent}}</view>
+        <view style="border: 2rpx solid #bbbbbb; border-radius: 6rpx; width: 80rpx; height: 40rpx; text-align: center;">{{item.proportion}}</view>
+    </view>
+<slider block-size="16" activeColor="#1684fc" min="0" max="{{totalProportion}}" bindchanging="handleChange" value="{{item.proportion}}" data-index="{{index}}"></slider>
+<view class="mark_row" wx:if="{{totalProportion % 5 === 0}}">
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
         0
     </view>
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
-        {{max/5}}
+        {{totalProportion/5}}
     </view>
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
-        {{max/5*2}}
+        {{totalProportion/5*2}}
     </view>
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
-        {{max/5*3}}
+        {{totalProportion/5*3}}
     </view>
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
-        {{max/5*4}}
+        {{totalProportion/5*4}}
     </view>
     <view class="mark">
         <view style="height: 20rpx; width: 2rpx; background-color: #BBBBBB; margin-left: 7rpx;"></view>
-        {{max}}
+        {{totalProportion}}
     </view>
+</view>
+</view>
+
+<view style="display: flex; align-items: center; font-size: 24rpx;">
+    <view>提示：总比重必须为：{{totalProportion}}， 已分配比重：</view>
+    <view style="color: red; margin-top: 5rpx;">{{total}}</view>,
+    <view wx:if="{{most}}" style="color: red; margin-left: 10rpx; margin-bottom: 5rpx;">请修改！</view>
 </view>

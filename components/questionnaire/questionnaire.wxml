@@ -7,84 +7,26 @@
             <image class="cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
         </view>
     </view>
-    <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}'>
+    <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}' wx:for="{{publishQ}}" wx:key="{{item._id}}">
        <view class="allCondition">
         <view class="lastOperationtime">
-            上次操作：2021.7.20/14:10:59
+            上次操作：{{item.publishTime.year}}.{{item.publishTime.month}}.{{item.publishTime.date}}/{{item.publishTime.hour}}:{{item.publishTime.minute}}:{{item.publishTime.second}}
             </view>   
             <view class="condition">
                 收集中
             </view>
        </view>
        <view class="qTitle">
-        关于xxxx的问卷
+        {{item.title}}
     </view>
     <view class="finishNum">已填100/200</view>
     <view class="btns">
-    <button class="btn">继续</button>
-    <button class="btn">查看</button>
-    <button class="btn">停止发布</button>
+    <view class="btn">继续</view>
+    <view class="btn">查看</view>
+    <view class="btn">停止发布</view>
     </view>
     </view>
-    <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 收集中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishNum">已填100/200</view>
-     <view class="btns">
-     <button class="btn">继续</button>
-     <button class="btn">查看</button>
-     <button class="btn">停止发布</button>
-     </view>
-     </view>
-     <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 收集中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishNum">已填100/200</view>
-     <view class="btns">
-     <button class="btn">继续</button>
-     <button class="btn">查看</button>
-     <button class="btn">停止发布</button>
-     </view>
-     </view>
-     <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 收集中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishNum">已填100/200</view>
-     <view class="btns">
-     <button class="btn">继续</button>
-     <button class="btn">查看</button>
-     <button class="btn">停止发布</button>
-     </view>
-     </view>
-
-    
+  
 </view>
 
 
@@ -97,7 +39,7 @@
             <image class="finished-cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
         </view>
     </view>
-    <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+    <view  wx:if="{{finishedChoose}}" wx:for="{{10}}" class='finishedQA' animation='{{finishedAnimationData}}'>
        <view class="allCondition">
         <view class="lastOperationtime">
             上次操作：2021.7.20/14:10:59
@@ -116,63 +58,7 @@
     <button class="btn">进入筛选</button>
     </view>
     </view>  
-    <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 筛选中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishPercent">完成度80%</view>
-     <view class="finished-btns">
-     <button class="btn">重新发布</button>
-     <button class="btn">查看</button>
-     <button class="btn">进入筛选</button>
-     </view>
-     </view>  
-     <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 筛选中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishPercent">完成度80%</view>
-     <view class="finished-btns">
-     <button class="btn">重新发布</button>
-     <button class="btn">查看</button>
-     <button class="btn">进入筛选</button>
-     </view>
-     </view>  
-     <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
-        <view class="allCondition">
-         <view class="lastOperationtime">
-             上次操作：2021.7.20/14:10:59
-             </view>   
-             <view class="condition">
-                 筛选中
-             </view>
-        </view>
-        <view class="qTitle">
-         关于xxxx的问卷
-     </view>
-     <view class="finishPercent">完成度80%</view>
-     <view class="finished-btns">
-     <button class="btn">重新发布</button>
-     <button class="btn">查看</button>
-     <button class="btn">进入筛选</button>
-     </view>
-     </view>  
+  
     
 </view>
 

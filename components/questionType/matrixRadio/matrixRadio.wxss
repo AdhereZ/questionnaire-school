@@ -23,8 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 96rpx; 
-    height: 72rpx; 
+    padding: 5rpx;
+    width: 96rpx;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
     border-right: 2rpx solid #fff;
 
 }

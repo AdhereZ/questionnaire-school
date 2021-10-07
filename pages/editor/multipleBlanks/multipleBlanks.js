@@ -1,3 +1,9 @@
+import regeneratorRuntime from '../../../lib/runtime/runtime';
+import { chooseImage, cloudUploadFile,showToast } from "../../../utils/asyncWx.js";
+import getID from '../../../utils/getID'
+
+const db = wx.cloud.database();
+const questionnaire = db.collection('questionnaire');
 Page({
 
     /**
@@ -8,8 +14,8 @@ Page({
             id: 1,
             color: '#aabbfd',
             isOn: false
-          },
-          selectArray: [{
+        },
+        selectArray: [{
             "id": "10",
             "text": "字符"
         }, {
@@ -27,15 +33,66 @@ Page({
         leastNum: 1,
         leastSubFlag: false,
         leastAddFlag: true,
-        fillBlanks:[
+        selectText: '字符',
+        id: '',
+        option: [
             {
-                id:0
+                option_id: getID(7),
+                isAnswer: false,
+                answer: '',
+                optionContent: '',
             }
-        ]
+        ],
+        question: {
+            questionTitle: '',
+            question_id: null,
+            typecode: 7,
+            required: false,
+            word_num: null,
+            type: "字符",
+            option: [
+                {
+                    option_id: null,
+                    isAnswer: false,
+                    answer: '',
+                    optionContent: '',
+                }
+            ]
+        },
+    },
+    onLoad: function (options) {
+        if (options.question_id) {
+            let questionnaire = wx.getStorageSync('questionnaire')
+            let question = questionnaire.questions.find(v => v.question_id === options.question_id
+            )
+            let option = question.option
+            let { switchData, leastSubFlag, leastAddFlag } = this.data
+            switchData.isOn = question.required
+            leastSubFlag = true
+            leastAddFlag = true
+            if (option.length === 1)
+                leastSubFlag = false
 
+            this.setData({
+                question,
+                option,
+                switchData,
+                leastSubFlag,
+                leastAddFlag
+            })
+        }
+        else {
+            // 如果是编辑的题目就用原来的question_id
+            let question_id = getID(5)
+            let { question } = this.data
+            question.question_id = question_id
+            this.setData({
+                question
+            })
+        }
     },
     leastSub() {
-        let { leastNum, leastSubFlag,leastAddFlag,fillBlanks } = this.data
+        let { leastNum, leastSubFlag, leastAddFlag, option } = this.data
         leastAddFlag = true
         if (leastNum === 1) {
             return
@@ -45,33 +102,36 @@ Page({
             leastNum--
             if (leastNum === 1)
                 leastSubFlag = false
-             fillBlanks.splice(fillBlanks.length-1,1)
+            option.splice(option.length - 1, 1)
         }
         this.setData({
             leastNum,
             leastSubFlag,
             leastAddFlag,
-            fillBlanks
+            option
         })
 
     },
     leastAdd() {
-        let { leastNum, leastSubFlag,fillBlanks} = this.data
-        let newfb= {
-            id:fillBlanks.length
+        let { leastNum, leastSubFlag, option } = this.data
+        let newfb = {
+            option_id: getID(7),
+            isAnswer: false,
+            answer: '',
+            optionContent: '',
         }
-        fillBlanks.push(newfb)
+        option.push(newfb)
         leastSubFlag = true
-            leastNum++
+        leastNum++
         this.setData({
             leastNum,
             leastSubFlag,
-            fillBlanks
+            option
         })
     },
     changeLeastNum(e) {
         let { value } = e.detail
-        let {leastSubFlag,fillBlanks } = this.data
+        let { leastSubFlag, option } = this.data
 
         if (value === '')
             value = 1
@@ -80,84 +140,115 @@ Page({
             value = 1
             leastSubFlag = false
         }
-        if(value<fillBlanks.length) {
-            fillBlanks.splice(value,fillBlanks.length-value)
+        if (value < option.length) {
+            option.splice(value, option.length - value)
         }
         else {
-            let x=fillBlanks.length
-             for(let i=x;i<value;i++) {
-                let newfb= {
-                    id:fillBlanks.length
+            let x = option.length
+            for (let i = x; i < value; i++) {
+                let newfb = {
+                    option_id: getID(7),
+                    isAnswer: false,
+                    answer: '',
+                    optionContent: '',
                 }
-                fillBlanks.push(newfb)
-             }
+                option.push(newfb)
+            }
         }
         this.setData({
             leastNum: value,
             leastSubFlag,
-            fillBlanks
+            option
+        })
+    },
+    getSelect(e) {
+        console.log(e.detail.value);
+        this.setData({
+            selectText: e.detail.value
         })
     },
     tagSwitch(event) {
-       
+
         this.data.switchData.isOn = !this.data.switchData.isOn
         this.setData({
-          switchData: this.data.switchData
+            switchData: this.data.switchData
         });
     },
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
-
+    checkUnique(arr) {
+        var narr = arr.sort();
+        for (var i = 0; i < arr.length; i++) {
+            if (narr[i] == narr[i + 1]) {
+                return true;
+            }
+        }
+        return false
     },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
+    async handleSubmit(e) {
+        let { question, option, switchData, selectText } = this.data
+        let { questionTitle } = e.detail.value
+        question.questionTitle = questionTitle
+        //检测标题是否为空
+        if (e.detail.value.questionTitle === '') {
+            await showToast({ title: '标题不能为空' })
+            return
+        }
+        //检查选项是否为空
+        var params = []
+        for (var key in e.detail.value) {
+            var param = {};
+            param.option = key;
+            param.optionContent = e.detail.value[key];
+            params.push(param);
+        }
+        console.log(params);
+        for (let i = 0; i < option.length; i++) {
+            if (params[i].optionContent === '') {
+                await showToast({ title: '选项不能为空' })
+                return
+            }
+            option[i].optionContent = params[i].optionContent
+        }
+        //检测是否有重复选项
+        let opc = []
+        for (let i = 0; i < option.length; i++) {
+            opc[i] = option[i].optionContent
+        }
+        let flag = this.checkUnique(opc)
+        if (flag) {
+            await showToast({ title: '选项内容不能重复' })
+            return
+        }
+        question.required = switchData.isOn
+        question.type = selectText
+        question.option = option
+        console.log(question);
+        let questions = []
+        let questionnaire = wx.getStorageSync('questionnaire')
+        if (questionnaire.questions)
+            questions = questionnaire.questions
+        let index = questions.findIndex(v => v.question_id === question.question_id)
+        if (index === -1)
+            questions = [...questions, question]
+        else
+            questions[index] = question
+        questionnaire.questions = questions
+        wx.setStorageSync('questionnaire', questionnaire)
+        this.setData({
+            question,
+            option,
+        })
+        wx.navigateBack({
+            delta: 1
+            // url: `/pages/createQuestionnaire/createQuestionnaire?openid=${openid}`,
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
+    handleInput(e) {
+        let { index } = e.currentTarget.dataset
+        let { value } = e.detail
+        let { option } = this.data
+        option[index].optionContent = value
+        this.setData({
+            option
+        })
     },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
-    }
 })

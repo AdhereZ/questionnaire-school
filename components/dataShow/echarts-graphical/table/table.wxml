@@ -1,0 +1,36 @@
+<wxs module="tranlateFormat" src="/utils/tranlateFormat.wxs"></wxs>
+<view class="tableArea">
+   <view class="numRow">
+    <view>填写人数</view>
+    <image src="/img/icons/arrow-down-bold.png" mode="widthFix" class="drop" bindtap="{{ createdFlag ? 'show' : 'hide' }}"></image>
+    <view>{{answerPersonNum}}</view>
+   </view>
+    <view class="table" animation="{{animationData}}" wx:if="{{choose}}" style="height: {{height2}};">
+        <view class="th">
+            <view class="tr1 tr">
+                选项
+            </view>
+            <view class="tr2 tr">
+                小计
+            </view>
+            <view class="tr3 tr">
+                比率
+            </view>
+        </view>
+        <view class="th" wx:for="{{answerOption}}" wx:key="{{index}}">
+            <view class="tr1 tr">
+             
+                <view>{{item.optionContent}}</view>
+                <view wx:if="{{item.leftTab}}" style="color: #ccc;">({{item.leftTab}})</view>
+                <view wx:if="{{item.rightTab}}" style="color: #ccc;">({{item.rightTab}})</view>
+               <navigator url="/pages/detail/detail?question_id={{question_id}}&option_id={{item.option_id}}" style="color: #2d77fb" wx:if="{{item.type_id === 3}}">[详情]</navigator>
+            </view>
+            <view class="tr2 tr">
+                {{item.chooseNum}}
+            </view>
+            <view class="tr3 tr">
+               <view>{{tranlateFormat.translate(item.chooseNum,answerPersonNum)}} </view>
+            </view>
+        </view>
+    </view>
+</view>

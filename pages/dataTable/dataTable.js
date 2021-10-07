@@ -1,18 +1,34 @@
-// pages/dataTable/dataTable.js
+const db = wx.cloud.database();
+const questionnaire = db.collection('questionnaire');
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+      questionnaires: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        let user = wx.getStorageSync('userInfo')
+        const _ = db.command
+        questionnaire.where({
+            _openid: user.openid,
+            condition: _.gt(1)
+        })
+        .get()
+        .then(res => {
+            console.log(res);
+            this.setData({
+                questionnaires: res.data,
+            })
+        })
+        .catch(err => {
+            console.log(err);
+        })
     },
 
     /**

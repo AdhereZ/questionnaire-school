@@ -1,5 +1,5 @@
 page {
-    height: 3000rpx;
+    padding-bottom: 250rpx;
 }
 .title {
     background-color: #fff;

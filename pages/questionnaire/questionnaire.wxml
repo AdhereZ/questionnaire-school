@@ -1,0 +1,67 @@
+<view class="title">
+    <QTitleCard title="{{questionnaire.title}}" describe="{{questionnaire.describe ? questionnaire.describe : '无备注'}}"></QTitleCard>
+</view>
+
+<view>
+   <completeCard wx:for="{{questions}}" wx:key="{{item.question_id}}" index="{{index}}" question="{{item}}" id="{{id}}" >
+       <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 1}}">
+        <singleChoice option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+        </singleChoice>
+       </view>
+   
+       <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 2}}">
+           <multipleChoice option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+           </multipleChoice>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 3}}">
+           <fillBlank option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+           </fillBlank>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 4}}">
+           <score option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+           </score>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 5}}">
+           <sort option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+           </sort>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 6}}">
+           <matrixRadio lineOption="{{item.lineOption}}" class="the-id" typecode="{{item.typecode}}">
+           </matrixRadio>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 7}}">
+           <multipleBlanks option="{{item.option}}" class="the-id" typecode="{{item.typecode}}">
+           </multipleBlanks>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 8}}">
+           <dropDown option="{{item.option}}"  class="the-id" typecode="{{item.typecode}}">
+           </dropDown>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 9}}">
+           <scale option="{{item.option}}"  leftTab="{{item.leftTab}}" rightTab="{{item.rightTab}}" typecode="{{item.typecode}}" class="the-id">
+           </scale>
+          </view>
+   
+          <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 10}}">
+           <proportion option="{{item.option}}"  totalProportion="{{item.totalProportion}}" typecode="{{item.typecode}}" class="the-id">
+           </proportion>
+          </view>
+    </completeCard>
+</view>
+
+<button class="submit" bindtap="onTap">确认</button>
+
+
+
+ 
+
+ 
+ 
+

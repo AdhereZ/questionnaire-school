@@ -1,0 +1,10 @@
+<view class="tableArea">
+    <view class="numRow">
+     <view style="margin-right: 450rpx">填写人数</view>
+     <view>{{answerPersonNum}}</view>
+    </view>
+    <view class="average">
+        <view style="margin-right: 470rpx">平均分</view>
+        <view>{{average}}</view>
+    </view>
+ </view>

@@ -5,6 +5,11 @@ Page({
   //  tabbar按键
   flag: 3,
  },
+ onLoad: function (options) {
+  this.setData({
+    flag: options.flag
+  })
+},
  indexTap() {
    this.setData({
      flag:0,
@@ -26,6 +31,11 @@ myTap() {
   })
 },
 createquestionTap(e) {
+  let userInfo = wx.getStorageSync('userInfo')
+  wx.removeStorageSync('questionnaire')
+  wx.navigateTo({
+    url: `../createQuestionnaire/createQuestionnaire`,
+  })
   this.setData({
     modalName: e.currentTarget.dataset.target
   })

@@ -57,7 +57,7 @@
                 {
                     "name": "矩阵单选编辑",
                     "pathName": "pages/editor/matrixRadio/matrixRadio",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
@@ -75,25 +75,25 @@
                 {
                     "name": "比重编辑",
                     "pathName": "pages/editor/proportion/proportion",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "量表编辑",
                     "pathName": "pages/editor/scale/scale",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "下拉题编辑",
                     "pathName": "pages/editor/dropDown/dropDown",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
                     "name": "多选填空",
                     "pathName": "pages/editor/multipleBlanks/multipleBlanks",
-                    "query": "",
+                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
                     "scene": null
                 },
                 {
@@ -105,7 +105,7 @@
                 {
                     "name": "问卷创建",
                     "pathName": "pages/createQuestionnaire/createQuestionnaire",
-                    "query": "id=cd045e7561123a6904ca785673ad0ac6",
+                    "query": "openid=oTBEQ40I0q3mLFSpgziXGxc5pkBc",
                     "scene": null
                 },
                 {
@@ -136,6 +136,30 @@
                     "name": "pages/transactionRecord/transactionRecord",
                     "pathName": "pages/transactionRecord/transactionRecord",
                     "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/questionnaire/questionnaire",
+                    "pathName": "pages/questionnaire/questionnaire",
+                    "query": "id=8937eaa9612b4ca206f2db041d5ca89c",
+                    "scene": null
+                },
+                {
+                    "name": "pages/collectData/collectData",
+                    "pathName": "pages/collectData/collectData",
+                    "query": "id=8937eaa9612b4ca206f2db041d5ca89c",
+                    "scene": null
+                },
+                {
+                    "name": "pages/detail/detail",
+                    "pathName": "pages/detail/detail",
+                    "query": "question_id=5coet1oyqbg0&option_id=48b84eju51y00",
+                    "scene": null
+                },
+                {
+                    "name": "pages/share/share",
+                    "pathName": "pages/share/share",
+                    "query": "id=cd045e75614163140ddc1e60587fd7b9&qrCode=cloud://questionnaire-school-7bza9c3ed76.7175-questionnaire-school-7bza9c3ed76-1306854088/qr/1631675214579.jpg&title=环境股份回购",
                     "scene": null
                 }
             ]

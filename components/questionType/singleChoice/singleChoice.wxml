@@ -1,16 +1,17 @@
 <view class="{{isFlex ?  'flextype' : ''}}">
-    <view wx:for="{{option}}" wx:key="{{item.id}}"  bindtap="mradioChange" data-idx="{{index}}" class="singleOption">
+    <view wx:for="{{option}}" wx:key="{{item.id}}"  bindtap="{{item.type_id !== 2 ? 'mradioChange' : ''}}" data-idx="{{index}}" class="singleOption">
         <view wx:if="{{item.type_id===1}}" class="single1">
             <my-radio isChecked="{{item.isAnswer}}">{{item.optionContent}}</my-radio>
         </view>      
             <view wx:if="{{item.type_id===2}}" class="single2">
-                <image src="{{item.optionContent}}"></image>
-                <my-radio isChecked="{{item.isAnswer}}"></my-radio>
+                <image src="{{item.imageID}}" data-src="{{item.imageID}}" bindtap="previewImage"></image>
+                <view style="margin-bottom: 10rpx;">{{item.optionContent}}</view>
+                <my-radio isChecked="{{item.isAnswer}}" data-idx="{{index}}" bindtap="mradioChange"></my-radio>
             </view>
 
         <view wx:if="{{item.type_id===3}}" class="single3">
             <my-radio isChecked="{{item.isAnswer}}">{{item.optionContent}}</my-radio>
-            <input type="text" wx:if="{{item.isAnswer}}" placeholder="请输入"/>
+            <input type="text"  wx:if="{{item.isAnswer}}" placeholder="请输入" bindblur="inputBlur" data-idx="{{index}}"/>
         </view>
         </view>
 </view>

@@ -4,7 +4,7 @@ Component({
      * 组件的属性列表
      */
     properties: {
-
+        typecode: Number,
     },
 
     /**
@@ -32,7 +32,8 @@ Component({
             isBright: false,
             id: '5'
         }
-      ]
+      ],
+      score: null
     },
 
     /**
@@ -70,7 +71,8 @@ Component({
                stars[i].isBright=false
             }
             this.setData({
-                stars
+                stars,
+                score: index+1
             })
         }
     }

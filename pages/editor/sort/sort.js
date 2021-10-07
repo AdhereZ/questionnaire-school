@@ -1,9 +1,7 @@
 import regeneratorRuntime from '../../../lib/runtime/runtime';
-import { chooseImage, cloudUploadFile } from "../../../utils/asyncWx.js";
+import { chooseImage, cloudUploadFile, cloudDeleteFile,showToast } from "../../../utils/asyncWx.js";
 import getID from '../../../utils/getID'
 
-const db = wx.cloud.database();
-const questionnaire = db.collection('questionnaire');
 Page({
 
   /**
@@ -30,6 +28,8 @@ Page({
       question_id: null,
       typecode: 5,
       required: false,
+      img: [],
+      hasImg: false,
       option: [
         {
           type_id: 1,
@@ -44,15 +44,30 @@ Page({
 
   },
   onLoad: function (options) {
-    console.log(options);
-    // 如果是编辑的题目就用原来的question_id
-    let question_id = options.question_id ? options.question_id : getID(5)
-    let { question } = this.data
-    question.question_id = question_id
-    this.setData({
-      id: options.id,
-      question
-    })
+    if (options.question_id) {
+      let questionnaire = wx.getStorageSync('questionnaire')
+      let question = questionnaire.questions.find(v => v.question_id === options.question_id
+      )
+      let option = question.option
+      let { switchData, leastNum, mostNum, mostAddFlag } = this.data
+      switchData.isOn = question.required
+      if (mostNum === 1 && option.length > 1)
+        mostAddFlag = true
+      this.setData({
+        question,
+        option,
+        switchData,
+      })
+    }
+    else {
+      // 如果是编辑的题目就用原来的question_id
+      let question_id = getID(5)
+      let { question } = this.data
+      question.question_id = question_id
+      this.setData({
+        question
+      })
+    }
   },
   addOption() {
     let { option } = this.data
@@ -83,23 +98,59 @@ Page({
     });
   },
   async chooseImg(e) {
+    let { option, question } = this.data
+    let { img, hasImg } = question
     let { index } = e.currentTarget.dataset
+    if (option[index].type_id === 2) {
+      let idx = img.findIndex(v => v.fileID === option[index].imageID)
+      img.splice(idx, 1)
+      const res2 = await cloudDeleteFile(option[index].imageID)
+      console.log(res2);
+    }
     const res = await chooseImage()
-    //  console.log(res.tempFilePaths[0]);
-    //  this.setData({
-    //    Img: res.tempFilePaths[0]
-    //  })
     const res1 = await cloudUploadFile(res.tempFilePaths[0])
-    let { option } = this.data
     option[index].type_id = 2
-    option[index].optionContent = res1.fileID
+    let newImg = {
+      imgID: getID(8),
+      fileID: res1.fileID
+    }
+    img.push(newImg)
+    hasImg = true
+    question.img = img
+    question.hasImg = hasImg
+    option[index].imageID = res1.fileID
+    console.log(option);
     this.setData({
-      option
+      option,
+      question
     })
+  },
+  titleInput(e) {
+    let { value } = e.detail
+    let { question } = this.data
+    question.questionTitle = value
+    this.setData({
+      question
+    })
+  },
+  checkUnique(arr) {
+    var narr=arr.sort();
+    for(var i=0;i<arr.length;i++){
+       if (narr[i]==narr[i+1]){
+          return true;
+       }
+    }
+    return false
   },
   async handleSubmit(e) {
     console.log(e);
-    let { question, option, switchData } = this.data
+    let { question, option, switchData,  } = this.data
+     //检测标题是否为空
+     if(e.detail.value.questionTitle === '') {
+      await showToast({title: '标题不能为空'})
+      return
+    }
+    //检查选项是否为空
     var params = []
     for (var key in e.detail.value) {
       var param = {};
@@ -107,39 +158,54 @@ Page({
       param.optionContent = e.detail.value[key];
       params.push(param);
     }
+    console.log(params);
     for (let i = 0; i < option.length; i++) {
-      if (option[i].type_id !== 2)
-        option[i].optionContent = params[i + 1].optionContent
+      if(params[i].optionContent === '') {
+        await showToast({title: '选项不能为空'})
+        return
+      }
+      option[i].optionContent = params[i].optionContent
+    }
+    
+    //检测是否有重复选项
+    let opc=[]
+    for (let i = 0; i < option.length; i++) {
+      opc[i] = option[i].optionContent
+    }
+    let flag = this.checkUnique(opc)
+    if(flag) {
+      await showToast({title: '选项内容不能重复'})
+      return
     }
     question.option = option
     question.required = switchData.isOn
     question.questionTitle = params[params.length - 1].optionContent
     let questions = []
-    const res = await questionnaire.doc(this.data.id).get()
-    console.log(res);
-    questions = res.data.questions
-    console.log(questions);
-    questions = [...questions, question]
-    console.log(questions);
-    questionnaire.doc(this.data.id)
-      .update({
-        data: {
-          questions
-        }
-      })
-      .then(res => {
-        console.log(res);
-      })
-      .catch(err => {
-        console.log(err);
-      }
-      )
+    let questionnaire = wx.getStorageSync('questionnaire')
+    if (questionnaire.questions)
+      questions = questionnaire.questions
+    let index = questions.findIndex(v => v.question_id === question.question_id)
+    if (index === -1)
+      questions = [...questions, question]
+    else
+      questions[index] = question
+    questionnaire.questions = questions
+    wx.setStorageSync('questionnaire', questionnaire)
     this.setData({
       question,
       option,
     })
-    wx.navigateTo({
-      url: `/pages/createQuestionnaire/createQuestionnaire?id=${this.data.id}`,
+    wx.navigateBack({
+      delta: 1
+    })
+  },
+  handleInput(e) {
+    let { index } = e.currentTarget.dataset
+    let { value } = e.detail
+    let { option } = this.data
+    option[index].optionContent = value
+    this.setData({
+      option
     })
   },
 

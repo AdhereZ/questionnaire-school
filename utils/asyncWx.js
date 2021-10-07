@@ -97,3 +97,33 @@ export const cloudUploadFile = tempFile => {
         });
     })
 }
+
+export const cloudDeleteFile = FileID => {
+    return new Promise((resolve, reject) => {
+        wx.cloud.deleteFile({
+            fileList: [FileID],
+            success: (result) => {
+                resolve(result)
+            },
+            fail: (err) => {
+                reject(err)
+            }
+        });
+    })
+}
+
+//根据id get请求数据
+export const cloudIdGet = id => {
+    return new Promise((resolve, reject) => {
+        wx.cloud.database().collection('questionnaire')
+        .doc(id)
+        .get()
+        .then(res => {
+            resolve(res)
+        })
+        .catch(err => {
+            reject(err)
+        }) 
+    })
+}
+
