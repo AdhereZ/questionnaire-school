@@ -34,6 +34,7 @@ Component({
                 wx.hideLoading()
                 console.log('错误', err);
             })
+            // wx.hideLoading()
     },
     /**
      * 组件的方法列表
