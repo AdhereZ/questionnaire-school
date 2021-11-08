@@ -1,0 +1,12 @@
+<view class='createdQA' wx:for="{{questionnaires}}" wx:key="{{item._id}}" >
+    <view class="lastOperationtime">
+{{item.publishTime.year}}.{{item.publishTime.month}}.{{item.publishTime.date}}/{{item.publishTime.hour}}:{{item.publishTime.minute}}:{{item.publishTime.second}}
+        </view>   
+   <view class="qTitle">
+    {{item.title}}
+</view>
+ <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 14rpx 32rpx;">
+    <view class="finishPercent">发布中</view>
+    <navigator class="queestionNum" url="/pages/collectData/collectData?id={{item._id}}">查看数据</navigator>
+ </view>
+</view>

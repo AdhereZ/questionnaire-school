@@ -1,0 +1,13 @@
+<form bindsubmit="handleSubmit">
+<view class="QaTitle">
+    <view style="font-weight: 700;font-family: SFUIText-bold; font-size: 36rpx;">问卷标题</view>
+        <textarea type="text" class="titleInput" placeholder="输入标题（100字内）" bindinput="handleInput" name="title"></textarea>
+</view>
+
+<!-- <view class="describe">
+    <view style="font-family: SFUIText-bold; font-size: 36rpx; font-weight: 700;">备注说明</view>
+    <textarea type="text" class="titleInput" placeholder="请输入填写本问卷的相关要求（300字内）" class="describeInput" name="describe"></textarea>
+</view> -->
+
+<button form-type="submit">创建问卷</button>
+</form>

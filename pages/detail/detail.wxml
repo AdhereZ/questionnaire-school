@@ -1,0 +1,29 @@
+<view class="tableArea">
+    <view class="numRow" style="margin-bottom: 20rpx;">
+     <view style="margin-right: 450rpx">数据量</view>
+     <view wx:if="{{typecode === 1 || typecode === 2}}">{{answerText.length}}</view>
+     <view wx:if="{{typecode === 3}}">{{answer.answerOption.length}}</view>
+     <view wx:if="{{typecode === 7}}">{{answer.answerPersonNum}}</view>
+    </view>
+    
+    <view wx:if="{{typecode === 7}}">
+        <view wx:for="{{answer.answerOption}}" style="margin-bottom: 50rpx;">
+            <view style="font-weight: 700; margin-bottom: 20rpx;">{{item.optionContent}}</view>
+            <view wx:for="{{item.answerText}}" class="text_row">
+                <text>{{item}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="text" wx:else>
+       <view wx:for="{{answerText}}" class="text_row" wx:if="{{typecode === 1 || typecode === 2}}">
+           <text>{{item}}</text>
+       </view>
+       <view wx:for="{{answer.answerOption}}" class="text_row" wx:if="{{typecode === 3}}">
+        <text>{{item}}</text>
+    </view>
+    </view>
+
+    <view>
+
+    </view>
+ </view>

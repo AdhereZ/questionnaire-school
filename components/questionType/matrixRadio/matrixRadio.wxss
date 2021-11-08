@@ -1,0 +1,40 @@
+.mrHead_row {
+    display: flex;
+    align-items: center;
+    background-color: #A2C4FF;
+    border-bottom: 2rpx solid #fff;
+}
+
+.mrHead {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mrBody_row {
+    display: flex;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-bottom: 2rpx solid #fff;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rpx;
+    width: 96rpx;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    border-right: 2rpx solid #fff;
+
+}
+
+.mrBody {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rpx;
+}

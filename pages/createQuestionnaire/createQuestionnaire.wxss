@@ -1,0 +1,74 @@
+page {
+    padding-bottom: 130rpx;
+}
+.QaTitle {
+    background-color: #fff;
+    padding: 8rpx 48rpx 0 20rpx;
+    margin-bottom: 22rpx;
+    box-shadow: 0 6rpx 22rpx -20rpx rgba(0, 0, 0, 0.4);
+}
+.titleInput {
+    font-size: 28rpx;
+    width: 712rpx;
+    height: 156rpx;
+    padding: 12rpx 12rpx;
+    margin-top: 20rpx;
+}
+
+.describe {
+    background-color: #fff;
+    padding: 8rpx 14rpx 34rpx 20rpx;
+    box-shadow: 0 6rpx 22rpx -20rpx rgba(0, 0, 0, 0.4);
+    margin-bottom: 50rpx;
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.4);
+}
+
+.describeInput {
+    font-size: 28rpx;
+    padding: 9rpx 9rpx;
+    width: 714rpx;
+    height: 340rpx;
+    margin-top: 28rpx;
+    border: 2rpx solid #BBBBBB;
+}
+
+.addQuestion {
+    width: 480rpx;
+    height: 140rpx;
+    margin: 86rpx 0 0 150rpx;
+    background-color: #fff;
+    border: 2rpx dashed #BBBBBB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addQuestion image {
+    width: 88rpx;
+    height: 88rpx;
+    margin-right: 16rpx;
+}
+
+.option {
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    height: 128rpx;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30rpx;
+    z-index: 101;
+    
+}
+.option_btn { 
+    margin: 0 40rpx;
+    width: 172rpx;
+    height: 72rpx;
+    text-align: center;
+    line-height: 72rpx;
+    border-radius: 18rpx;
+    border: 2rpx solid #BBBBBB;
+    font-family: PingFangSC-regular;
+}

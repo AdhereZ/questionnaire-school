@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "switchItme": "../../../components/switchItme/switchItme"
+  },
+  "navigationBarTitleText": "矩阵单选编辑"
+}

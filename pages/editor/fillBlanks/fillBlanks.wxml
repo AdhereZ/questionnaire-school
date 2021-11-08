@@ -1,0 +1,31 @@
+<form bindsubmit="handleSubmit">
+<view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
+</view>
+
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer setupLine">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:40rpx">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+            </switchItme>
+          </view>
+    </view>
+    <view class="selectBar setupLine">
+        <view>答题限制</view>
+        <select prop-array="{{selectArray}}" bindgetSelect="getSelect" nowText="{{option.type}}"></select>
+    </view>
+    <view class="maxWord setupLine">
+        <view>字数限制</view>
+        <view style="font-size: 24rpx; color: #A59F9F; margin: 0 12rpx 0 347rpx">最大值</view>
+        <input type="text" placeholder="100以下" name="word_num" value="{{question.word_num}}"/>
+    </view>
+</view>
+
+
+<button class="submit" form-type="submit">确认</button>
+</form>
+
+

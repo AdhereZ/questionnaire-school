@@ -1,0 +1,105 @@
+navigator{
+  color:rgb(12, 12, 12);
+}
+
+
+/* image{ */
+  /* box-sizing: border-box; */
+  /* width: 30px; */
+  /* height: 30px; */
+/* } */
+
+.local-nav{
+  display: flex;
+  height: 150rpx;
+  background-color: rgb(234, 245, 250);
+  margin: 6rpx 22rpx;
+  border-radius: 16rpx;
+  box-shadow: 0rpx 10rpx 20rpx -2rpx rgba(0, 0, 0, 0.4);
+}
+.local-nav view{
+  flex: 1;
+}
+
+.local-nav navigator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.local-nav view [class^="local-nav-icon"]{
+  width: 62rpx;
+  height: 62rpx;
+  background-color: pink;
+  margin-top: 16rpx;
+  background:url(https://z3.ax1x.com/2021/07/25/W2sA4s.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nav view .local-nav-icon-icon2{
+  background:url(https://z3.ax1x.com/2021/07/25/W26fhj.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nav view .local-nav-icon-icon3{
+  background:url(https://z3.ax1x.com/2021/07/25/W2chVO.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nav view .local-nav-icon-icon4{
+  background:url(https://z3.ax1x.com/2021/07/25/W2cjZ8.png);
+  background-size: 62rpx 62rpx;
+}
+.local-nav view .local-nav-icon-icon5{
+  background:url(https://z3.ax1x.com/2021/07/25/W2cvdS.png);
+  background-size: 62rpx 62rpx;
+}
+
+
+.local-nava{
+  display: flex;
+  height: 150rpx;
+  background-color: rgb(234, 245, 250);
+  margin: 6rpx 22rpx;
+  border-radius: 16rpx;
+  box-shadow: 0rpx 10rpx 20rpx -2rpx rgba(0, 0, 0, 0.4);
+}
+.local-nava view{
+  flex: 1;
+}
+
+.local-nava navigator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.local-nava view [class^="local-nava-icon"]{
+  width: 62rpx;
+  height: 62rpx;
+  background-color: rgb(250, 249, 249);
+  margin-top: 16rpx;
+  background:url(https://z3.ax1x.com/2021/07/25/W2WNYF.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nava view .local-nava-icon-icon2{
+  background:url(https://z3.ax1x.com/2021/07/25/W2WUW4.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nava view .local-nava-icon-icon3{
+  background:url(https://z3.ax1x.com/2021/07/25/W2Wj6s.png);
+  background-size: 62rpx 62rpx;
+}
+
+.local-nava view .local-nava-icon-icon4{
+  background:url(https://z3.ax1x.com/2021/07/25/W2W0yR.png);
+  background-size: 62rpx 62rpx;
+}
+.local-nava view .local-nava-icon-icon5{
+  background:url(https://z3.ax1x.com/2021/07/25/W2Wh6A.png);
+  background-size: 62rpx 62rpx;
+}

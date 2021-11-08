@@ -1,0 +1,29 @@
+.group {
+  height: 44px;
+  border-style: solid none solid;
+  border-width: 2px;
+  border-color: #BBBBBB;
+}
+.group image {
+  position: relative;
+  width: 30px;
+  top: 7px;
+}
+.group input {
+  position: relative;
+  left: 40px;
+  top: -21px;
+  width: 70px;
+}
+.group .group-all {
+  display: inline;
+  width: 44px;
+  height: 24px;
+  line-height: 20px;
+  border-radius: 2px;
+  background-color: #e6e3e3;
+  color: #101010;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial;
+}

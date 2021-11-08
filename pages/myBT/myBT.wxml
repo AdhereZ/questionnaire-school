@@ -1,0 +1,41 @@
+
+<view class="head">
+  <image src="/img/BTmoney/bgc.jpg" mode="widthFix"/>
+  <text class="head-text">余额</text>
+  <text class="head-num">55</text>
+  <text class="head-bi">BT币</text>
+</view>
+
+<navigator class="local-nav" bindtap="money" url="/pages/recharge/recharge">
+  <text class="tp-1">充值</text>
+ <view class="tabs">  
+    <text class="picture" > </text>
+    <!-- <image src="https://z3.ax1x.com/2021/08/04/fETVOO.png" /> -->    
+ </view>
+    
+</navigator>
+
+<navigator class="local-nav2" url="/pages/reflect/reflect">
+<text class="tp-1">提现</text>
+<view class="tabs">  
+    <text class="picture"> </text>
+    <!-- <image src="https://z3.ax1x.com/2021/08/04/fETVOO.png" /> -->    
+ </view>
+</navigator>
+
+<navigator class="local-nav3" bindtap="chongzhi" url="/pages/recharge_detail/recharge_detail">
+  <text class="tp-1">充值明细</text>
+  <view class="tabs">  
+    <text class="picture"> </text>
+    <!-- <image src="https://z3.ax1x.com/2021/08/04/fETVOO.png" /> -->    
+ </view>
+</navigator>
+
+<navigator class="local-nav4" bindtap="chongzhi"  url="/pages/reflect_detail/reflect_detail">
+  <text class="tp-1" >提现明细</text>
+  <view class="tabs">  
+    <text class="picture"> </text>
+    <!-- <image src="https://z3.ax1x.com/2021/08/04/fETVOO.png" /> -->    
+ </view>
+</navigator>
+

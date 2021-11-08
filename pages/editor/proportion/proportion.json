@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "switchItme": "../../../components/switchItme/switchItme"
+  },
+  "navigationBarTitleText": "比重题编辑"
+}

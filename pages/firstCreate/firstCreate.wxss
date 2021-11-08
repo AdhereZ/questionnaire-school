@@ -1,0 +1,38 @@
+.QaTitle {
+    background-color: #fff;
+    padding: 8rpx 48rpx 0 20rpx;
+    margin-bottom: 22rpx;
+    box-shadow: 0 6rpx 22rpx -20rpx rgba(0, 0, 0, 0.4);
+}
+.titleInput {
+    font-size: 28rpx;
+    width: 712rpx;
+    height: 156rpx;
+    padding: 12rpx 12rpx;
+    margin-top: 20rpx;
+}
+
+.describe {
+    background-color: #fff;
+    padding: 8rpx 14rpx 34rpx 20rpx;
+    box-shadow: 0 6rpx 22rpx -20rpx rgba(0, 0, 0, 0.4);
+}
+
+.describeInput {
+    font-size: 28rpx;
+    padding: 9rpx 9rpx;
+    width: 714rpx;
+    height: 340rpx;
+    margin-top: 28rpx;
+    border: 2rpx solid #BBBBBB;
+}
+
+button {
+    background-color: #5677fc;
+    color: #fff;
+    width: 430rpx;
+    height: 72rpx;
+    line-height: 72rpx;
+    font-size: 32rpx;
+    margin-top: 50rpx;
+}

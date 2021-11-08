@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "select": "../../../components/select/select",
+    "switchItme": "../../../components/switchItme/switchItme"
+  },
+  "navigationBarTitleText": "量表题编辑"
+}

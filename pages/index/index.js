@@ -3,8 +3,13 @@
 Page({
  data: {
   //  tabbar按键
-  flag: 0,
+  flag: 3,
  },
+ onLoad: function (options) {
+  this.setData({
+    flag: options.flag
+  })
+},
  indexTap() {
    this.setData({
      flag:0,
@@ -25,10 +30,23 @@ myTap() {
     flag:3,
   })
 },
-createquestionTap() {
-  this.setData({
-    flag:4,
+createquestionTap(e) {
+  let userInfo = wx.getStorageSync('userInfo')
+  wx.removeStorageSync('questionnaire')
+  wx.navigateTo({
+    url: `../createQuestionnaire/createQuestionnaire`,
   })
+  this.setData({
+    modalName: e.currentTarget.dataset.target
+  })
+},
+hideModal(e) {
+  this.setData({
+    modalName: null
+  })
+},
+dialog(e) {
+  e.stopPropagation()
 }
 
  

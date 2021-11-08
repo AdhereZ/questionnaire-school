@@ -1,0 +1,9 @@
+<view class="scale" style="margin-left: 35rpx;">
+    <view class="scale_row">
+        <view class="scale_square {{item.isAnswer ? 'bgDark':''}}" wx:for="{{option}}" wx:key="{{item.option_id}}" bindtap="bgChange" data-index="{{index}}">{{item.optionContent}}</view>
+    </view>
+</view>
+<view style="display:flex; width: 100%; position: relative;">
+    <view style=" margin-left: 30rpx;">{{leftTab}}</view>
+    <view style="position: absolute; right: 40rpx">{{rightTab}}</view>
+</view>

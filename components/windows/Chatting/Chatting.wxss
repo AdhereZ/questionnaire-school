@@ -1,0 +1,40 @@
+.chatting {
+  margin-top: 10rpx;
+  height: 140rpx;
+  display: flex;
+  background-color: #fafafa;
+}
+.chatting .Img-position {
+  padding: 20rpx;
+  padding-right: 10rpx;
+}
+.myImg {
+  border-style: solid;
+  border-color: #c7c7c7;
+  border-width: 2rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #e8e8e8;
+}
+.myImg image {
+  margin: 12rpx;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  width: 50rpx;
+}
+.ID {
+  margin: 10rpx;
+  font-size: larger;
+}
+.Message {
+  margin-left: 10rpx;
+  color: #c7c7c7;
+}
+.time {
+  margin-left: 260rpx;
+  margin-top: 30rpx;
+  color: #c7c7c7;
+}

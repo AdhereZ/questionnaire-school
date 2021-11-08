@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "switchItme": "../../../components/switchItme/switchItme"
+  },
+  "navigationBarTitleText": "排序编辑"
+}

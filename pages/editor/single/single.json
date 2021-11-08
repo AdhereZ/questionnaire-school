@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "switchItme": "../../../components/switchItme/switchItme",
+    "myRadio": "/components/my-radio/my-radio"
+  },
+  "navigationBarTitleText": "单选编辑"
+}

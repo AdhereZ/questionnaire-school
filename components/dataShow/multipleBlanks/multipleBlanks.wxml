@@ -1,0 +1,2 @@
+<navigator url="/pages/detail/detail?question_id={{question_id}}&option_id={{item.option_id}}" style="color: #2d77fb; margin-left: 30rpx;">[详情]</navigator>
+

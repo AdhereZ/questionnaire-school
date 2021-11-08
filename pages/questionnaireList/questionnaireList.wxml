@@ -1,0 +1,133 @@
+<view class='container created '>
+    <view class="createdBar">
+        <text>我发布的</text>
+        <view bindtap="{{ createdFlag ? 'showContent' : 'hideContent' }}" class="express">
+            <image class="cf" src="../../img/icons/arrow-down-bold.png" mode="widthFix" wx:if="{{createdFlag}}"></image>
+            <image class="cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
+        </view>
+    </view>
+   <view class="box1">
+    <view  wx:if="{{choose}}" wx:for="{{publishQ}}" class='createdQA' animation='{{animationData}}'>
+        <view style="display: flex; align-items: center;">
+            <view class="lastOperationtime">
+                {{item.publishTime.year}}.{{item.publishTime.month}}.{{item.publishTime.date}}/{{item.publishTime.hour}}:{{item.publishTime.minute}}:{{item.publishTime.second}}
+                </view> 
+                <image src="/img/icons/code.png" data-id="{{item._id}}" data-code="{{item.qrCode}}" data-title="{{item.title}}" bindtap="share" mode="widthFix" style="width: 40rpx; height: 40rpx;"></image>
+        </view>
+              
+       <view class="qTitle">
+        {{item.title}}
+    </view>
+     <view style="width: 292rpx;height: 30rpx; margin: 8rpx 18rpx 24rpx 32rpx; display: flex; align-items: center; padding-bottom: 10rpx;">
+        <view class="finishPercent">10/100</view>
+        <view class="queestionNum">申请推送</view>
+     </view>
+    </view>
+   </view>
+</view>
+
+
+<!-- 我参与的 -->
+<view class='container finished'>
+    <view class="finishedBar">
+        <text>已完成的</text>
+        <view bindtap="{{ finishedFlag ? 'finishedShowContent' : 'finishedHideContent' }}" class="finishedExpress">
+            <image class="finished-cf" src="../../img/icons/arrow-down-bold.png" mode="widthFix" wx:if="{{finishedFlag}}"></image>
+            <image class="finished-cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
+        </view>
+    </view>
+
+    <view class="box2">
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+
+        <view  wx:if="{{finishedChoose}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+            <view class="lastOperationtime">
+               2021.7.20/14:10:59
+                </view>   
+           <view class="qTitle">
+            关于xxxx的问卷
+        </view>
+        <view class="BTNum">8BT</view>
+        </view>  
+    </view>
+
+    
+</view>

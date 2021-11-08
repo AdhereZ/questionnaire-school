@@ -1,0 +1,62 @@
+<form bindsubmit="handleSubmit">
+  <view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}" bindinput="titleInput"></textarea>
+</view>
+
+
+<view style="margin-left: 18rpx;">选项</view>
+<view class="option"> 
+  <checkbox-group name="checkbox">
+    <view class="inputText" wx:for="{{option}}" wx:key="{{item.id}}">
+        <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
+        <input type="text" placeholder="输入选项（50字内）" name="选项{{index+1}}" data-index="{{index}}" value="{{item.optionContent}}" bindinput="handleInput"/>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture-check.png" bindtap="chooseImg" wx:if="{{item.type_id===2}}"></image>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture.png" bindtap="chooseImg" wx:else></image>
+        <image class="choose" mode="widthFix"  src="../../../img/TitleEditor/ellipsis-h-check.png" bindtap="showModal" data-target="{{index}}" wx:if="{{item.type_id===3}}"></image>
+        <image class="choose" mode="widthFix"  src="../../../img/TitleEditor/ellipsis-h.png" bindtap="showModal" data-target="{{index}}" wx:else></image>
+        <view class="cu-modal {{modalName== index?'show':''}}">
+          <view class="cu-dialog bg-white" style="width: 500rpx;">
+            <view class="bg-img" style="height:125rpx; display: flex; align-items: center; ">
+              <view style="margin-right: 200rpx; font-size: 34rpx; margin-left: 50rpx;">允许填空</view>
+              
+                <checkbox value="{{index}}" bindtap="handleBlank" data-idx="{{index}}" checked="{{item.type_id === 3 ? 'true' :false}}"></checkbox>
+          
+              
+              <view class="cu-bar justify-end text-white">
+                <view class="action" bindtap="hideModal">
+                </view>
+              </view>
+            </view>
+            <view class="cu-bar bg-white" style="border-top: 2rpx solid #bbbbbb ;">
+              <view class="action margin-0 flex-sub  solid-left" bindtap="hideModal">我知道了</view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </checkbox-group>
+ 
+
+  <view class="addoption">
+    <view bindtap="addOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    </view>
+  </view>
+  
+</view>
+
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:20px">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}" data-required="{{switchData.isOn}}">
+            </switchItme>
+          </view>
+    </view>
+</view>
+
+<button class="submit" form-type="submit">确认</button>
+</form>
+
+<!-- <image src="{{Img}}"></image> -->
+

@@ -1,0 +1,36 @@
+<form bindsubmit="handleSubmit">
+<view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}" bindinput="titleInput"></textarea>
+</view>
+
+
+<view style="margin-left: 18rpx;">选项</view>
+<view class="option"> 
+    <view class="inputText" wx:for="{{option}}" wx:key="{{item.id}}">
+        <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
+        <input type="text" placeholder="输入选项（50字内）" name="选项{{index+1}}" data-index="{{index}}" value="{{item.optionContent}}" bindinput="handleInput"/>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture-check.png" bindtap="chooseImg" wx:if="{{item.type_id===2}}"></image>
+        <image class="picture" mode="widthFix" data-index="{{index}}" src="../../../img/icons/picture.png" bindtap="chooseImg" wx:else></image>
+    </view>
+
+  <view class="addoption">
+    <view bindtap="addOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    </view>
+  </view>
+  
+</view>
+
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:20px">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+            </switchItme>
+          </view>
+    </view>
+</view>
+
+<button class="submit" form-type="submit">确认</button>
+</form>

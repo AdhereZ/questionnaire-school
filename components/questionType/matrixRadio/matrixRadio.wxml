@@ -1,0 +1,12 @@
+<view class="matrixRadio">
+    <view class="mrHead_row">
+        <view style="width: 96rpx; height: 72rpx; border-right: 2rpx solid #fff;"></view>
+     <view class="mrHead" wx:for="{{lineOption[0].columnOption}}" wx:key="{{item.id}}">{{item.columnContent}}</view>
+    </view>
+    <view class="mrBody_row" wx:for="{{lineOption}}" wx:key="{{item.id}}" data-index="{{index}}">
+        <view class="title">{{item.lineContent}}</view>
+        <view class="mrBody" wx:for="{{item.columnOption}}" wx:key="{{item2.id}}" wx:for-item="item2" data-index="{{index}}" wx:for-index="index2" data-index2="{{index2}}" bindtap="handleClick">
+            <myRadio isChecked="{{item2.isAnswer}}"></myRadio>
+        </view>
+    </view>
+</view>

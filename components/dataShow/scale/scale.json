@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "Histogram": "../echarts-graphical/Histogram/Histogram",
+        "barChart": "../echarts-graphical/barChart/barChart",
+        "pieChart": "../echarts-graphical/pieChart/pieChart",
+        "table": "../echarts-graphical/table/table"
+    }
+}

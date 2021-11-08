@@ -1,0 +1,27 @@
+.m-radio {
+    width: 30rpx;
+    height: 30rpx;
+    border: 2rpx solid #BBBBBB;
+    border-radius: 15rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16rpx;
+    background-color: #fff;
+}
+
+.circular {
+    background-color: #1890FF; 
+    width: 12rpx; 
+    height: 12rpx; 
+    border-radius: 6rpx;
+}
+
+.beCheck {
+    border-color: #1890FF;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+}

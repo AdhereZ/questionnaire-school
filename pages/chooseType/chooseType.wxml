@@ -1,0 +1,84 @@
+
+
+ <view style="color: rgb(10, 133, 241); font-size: 28rpx;margin-top: 228rpx; margin-left: 34rpx; font-weight: 700; font-family: PingFangSC-bold">基础题型</view>
+<view class="local-nav">
+  <view>
+  <navigator open-type="redirect" url="../editor/single/single">   
+      <text class="local-nav-icon-icon1"></text>    
+      <text selectable decode>&nbsp; </text>
+      <text>单选题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/multipleChoice/multipleChoice">   
+      <text class="local-nav-icon-icon2"></text> 
+      <text selectable decode>&nbsp; </text>   
+      <text>多选题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/fillBlanks/fillBlanks">   
+      <text class="local-nav-icon-icon3"></text>    
+      <text selectable decode>&nbsp; </text>
+      <text>填空题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/score/score">   
+      <text class="local-nav-icon-icon4"></text>    
+      <text selectable decode>&nbsp; </text>
+      <text>打分题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/sort/sort">   
+      <text class="local-nav-icon-icon5"></text>   
+      <text selectable decode>&nbsp; </text> 
+      <text>排序题</text>   
+  </navigator>
+</view>
+</view>
+
+
+<view style="color: rgb(10, 133, 241); font-size: 28rpx;margin-top: 54rpx; margin-left: 34rpx; font-weight: 700;font-family: PingFangSC-bold">进阶题型</view>
+<view class="local-nava">
+<view>
+  <navigator open-type="redirect" url="../editor/matrixRadio/matrixRadio">   
+      <text class="local-nava-icon-icon1"></text>    
+      <text selectable decode>&nbsp; </text> 
+      <text>矩阵单选</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/multipleBlanks/multipleBlanks">   
+      <text class="local-nava-icon-icon2"></text>    
+      <text selectable decode>&nbsp; </text> 
+      <text>多项填空</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/dropDown/dropDown">   
+      <text class="local-nava-icon-icon4"></text>    
+      <text selectable decode>&nbsp; </text> 
+      <text>下拉题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/scale/scale">   
+      <text class="local-nava-icon-icon5"></text>    
+      <text selectable decode>&nbsp; </text> 
+      <text>量表题</text>   
+  </navigator>
+</view>
+<view>
+  <navigator open-type="redirect" url="../editor/proportion/proportion">   
+      <text class="local-nava-icon-icon3"></text> 
+      <text selectable decode>&nbsp; </text>    
+      <text>比重题</text>   
+  </navigator>
+</view>
+</view>
+
+  
+
+  

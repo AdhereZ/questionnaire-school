@@ -1,0 +1,4 @@
+<input type="text" placeholder="请输入字符" wx:if="{{option.type==='字符'}}" bindblur="inputBlur"/>
+<input type="text" placeholder="请输入字母" wx:elif="{{option.type==='字母'}}" bindblur="inputBlur"/>
+<input type="number" placeholder="请输入数字" wx:elif="{{option.type==='数字'}}" bindblur="inputBlur"/>
+<input type="text" placeholder="请输入汉字" wx:elif="{{option.type==='汉字'}}" bindblur="inputBlur"/>

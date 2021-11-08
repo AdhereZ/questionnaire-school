@@ -1,0 +1,37 @@
+<view class="draft_row">
+  <view class="draft" wx:for="{{questionnaires}}" wx:key="{{item._id}}">
+    <view class="time">
+        <image mode="widthFix" src="../../img/other/time.png"></image>
+        <view class="date">{{item.time.year}}年{{item.time.month}}月{{item.time.date}}日{{item.time.hour}}：{{item.time.minute}}：{{item.time.second}} 更新</view>
+    </view>
+    <view class="draftTitle">{{item.title}}</view>
+    <view class="description">{{item.describe ? item.describe : '无备注'}}</view>
+    <view class="qNum">共{{item.questions.length}}题</view>
+    <view class="option">
+        <view class="option-img" data-chooseID="{{item._id}}" bindtap="showModal" data-target="bottomModal">
+            <image mode="widthFix" src="../../img/other/md-subject@3x.png"></image>
+        </view>
+        <view class="release" bindtap="publish" data-chooseID="{{item._id}}">发布</view>
+    </view>
+   
+</view>
+</view>
+
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+    <view class="cu-dialog">
+      <view >
+        <view class="bottom-bar" style="margin-bottom: 4rpx;" bindtap="editor">编辑</view>
+        <view class="bottom-bar" style="margin-bottom: 14rpx;" bindtap="remove">删除</view>
+        <view class="bottom-bar"  bindtap="hideModal">取消</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+

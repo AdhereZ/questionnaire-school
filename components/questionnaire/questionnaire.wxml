@@ -1,2 +1,64 @@
-<!--components/questionnaire/questionnaire.wxml-->
-<text>components/questionnaire/questionnaire.wxml</text>
+<!-- 我发布的  -->
+<view class='container created'>
+    <view class="createdBar">
+        <text>我发布的</text>
+        <view bindtap="{{ createdFlag ? 'showContent' : 'hideContent' }}" class="express">
+            <image class="cf" src="../../img/icons/arrow-down-bold.png" mode="widthFix" wx:if="{{createdFlag}}"></image>
+            <image class="cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
+        </view>
+    </view>
+    <view  wx:if="{{choose}}" class='createdQA' animation='{{animationData}}' wx:for="{{publishQ}}" wx:key="{{item._id}}">
+       <view class="allCondition">
+        <view class="lastOperationtime">
+            上次操作：{{item.publishTime.year}}.{{item.publishTime.month}}.{{item.publishTime.date}}/{{item.publishTime.hour}}:{{item.publishTime.minute}}:{{item.publishTime.second}}
+            </view>   
+            <view class="condition">
+                收集中
+            </view>
+       </view>
+       <view class="qTitle">
+        {{item.title}}
+    </view>
+    <view class="finishNum">已填100/200</view>
+    <view class="btns">
+    <view class="btn">继续</view>
+    <view class="btn">查看</view>
+    <view class="btn">停止发布</view>
+    </view>
+    </view>
+  
+</view>
+
+
+<!-- 已完成的 -->
+<view class='container finished'>
+    <view class="finishedBar">
+        <text>已完成的</text>
+        <view bindtap="{{ finishedFlag ? 'finishedShowContent' : 'finishedHideContent' }}" class="finishedExpress">
+            <image class="finished-cf" src="../../img/icons/arrow-down-bold.png" wx:if="{{finishedFlag}}" mode="widthFix"></image>
+            <image class="finished-cf" src="../../img/icons/arrow-up-bold.png" mode="widthFix" wx:else></image>
+        </view>
+    </view>
+    <view  wx:if="{{finishedChoose}}" wx:for="{{10}}" class='finishedQA' animation='{{finishedAnimationData}}'>
+       <view class="allCondition">
+        <view class="lastOperationtime">
+            上次操作：2021.7.20/14:10:59
+            </view>   
+            <view class="condition">
+                筛选中
+            </view>
+       </view>
+       <view class="qTitle">
+        关于xxxx的问卷
+    </view>
+    <view class="finishPercent">完成度80%</view>
+    <view class="finished-btns">
+    <button class="btn">重新发布</button>
+    <button class="btn">查看</button>
+    <button class="btn">进入筛选</button>
+    </view>
+    </view>  
+  
+    
+</view>
+

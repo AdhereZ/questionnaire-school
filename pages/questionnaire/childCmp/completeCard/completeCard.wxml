@@ -1,0 +1,13 @@
+<view style="margin-bottom: 20rpx;">
+  <view class="complete-card">
+      <view style="width: 644rpx; height: 44rpx; font-weight: 700; margin-bottom: 32rpx;">
+          Q{{index+1}}：{{question.questionTitle}}
+          <text wx:if="{{question.required}}" style="color: red;">*</text>
+          <text wx:if="{{question.typecode === 2}}">（多选）</text>
+          <text wx:if="{{question.typecode === 5}}">（依次选择）</text>
+      </view>
+      <view>
+          <slot></slot>
+      </view>
+  </view>
+</view>

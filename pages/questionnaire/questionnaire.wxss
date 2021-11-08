@@ -1,0 +1,20 @@
+page {
+    padding-bottom: 80rpx;
+}
+.title {
+    background-color: #fff;
+    padding: 66rpx 0 90rpx 0;
+    box-shadow: 0px 10px 11px -10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20rpx;
+}
+
+.submit {
+    background-color: #5677fc;
+    color: #fff;
+    width: 430rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    font-weight: normal;
+    margin-bottom: 45rpx;
+    margin-top: 100rpx;
+}

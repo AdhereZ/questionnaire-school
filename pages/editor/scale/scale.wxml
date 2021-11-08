@@ -1,0 +1,32 @@
+<form bindsubmit="handleSubmit">
+    <view class="question">
+        <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
+    </view>
+    
+    
+    <view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+    <view class="setup">
+        <view class="answer setupLine">
+            <view style="float:left;">必答</view>
+            <view class="switch" style="margin-right:40rpx">
+                <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+                </switchItme>
+              </view>
+        </view>
+        <view class="label setupLine">
+            <view style="margin-right: 266rpx">极值标签</view>
+            <input type="text" placeholder="左标签" name="leftTab" value="{{question.leftTab}}"/>
+             <view style="height: 2rpx; width: 24rpx; background-color: #BBBBBB;"></view>
+            <input type="text" placeholder="右标签" name="rightTab" value="{{question.rightTab}}"/>
+        </view>
+        <view class="selectBar setupLine">
+            <view>量级设置</view>
+            <select prop-array="{{selectArray}}" bindgetSelect="getSelect" nowText="{{question.magnitude}}"></select>
+        </view>
+    </view>
+        
+       
+    
+    
+    <button class="submit" form-type="submit">确认</button>    
+</form>

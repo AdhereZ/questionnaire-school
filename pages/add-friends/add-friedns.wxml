@@ -1,0 +1,7 @@
+<!--pages/add-friends/add-friedns.wxml-->
+<view>
+    <Search></Search>
+</view>
+<view>
+    <myfriends></myfriends>
+</view>

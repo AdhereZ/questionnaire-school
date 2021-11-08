@@ -1,0 +1,49 @@
+<form bindsubmit="handleSubmit">
+  <view class="question">
+    <textarea placeholder="请在此处输入问题（200字内）" name="questionTitle" value="{{question.questionTitle}}"></textarea>
+</view>
+
+<view style="margin-left: 18rpx;">行</view>
+    <view class="option line" > 
+        <view class="inputText" wx:for="{{lineOption}}" wx:key="{{item.id}}">
+            <view bindtap="deleteoption" data-index="{{index}}"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
+            <input type="text" placeholder="输入选项（50字内）" name="行选项{{index+1}}" data-index="{{index}}" value="{{item.lineContent}}" bindinput="handleLineInput"/>
+        </view>
+    
+      <view class="addoption">
+        <view bindtap="addOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+        </view>
+      </view>
+      
+    </view>
+
+<view style="margin-left: 18rpx;">列</view>
+<view class="option"> 
+    <view class="inputText" wx:for="{{columnOption}}" wx:key="{{item.id}}" >
+        <view bindtap="deleteCoption" data-index="{{index}}" data-ty="columnOption"> <image class="delete" mode="widthFix" src="../../../img/TitleEditor/editoricon3.png"></image> </view>
+        <input type="text" placeholder="输入选项（50字内）" name="列选项{{index+1}}" data-index="{{index}}" value="{{item.columnContent}}" bindinput="handleColumnInput"/>
+    </view>
+
+  <view class="addoption">
+    <view bindtap="addCOption" data-ty="columnOption"><image src="../../../img/TitleEditor/editoricon4.png" mode="widthFix"></image>
+    </view>
+  </view>
+  
+</view>
+
+<view style="margin-left: 18rpx;margin-bottom: 14rpx;">设置</view>
+<view class="setup">
+    <view class="answer">
+        <view style="float:left;">必答</view>
+        <view class="switch" style="margin-right:20px">
+            <switchItme bindmyevent="tagSwitch" dataItem="{{switchData}}">
+            </switchItme>
+          </view>
+    </view>
+</view>
+
+
+
+
+<button class="submit" form-type="submit">确认</button>
+</form>

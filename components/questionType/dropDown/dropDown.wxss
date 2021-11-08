@@ -1,0 +1,17 @@
+.dropDown_row {
+    margin-bottom: 20rpx;
+}
+
+
+.title {
+    height: 60rpx;
+    line-height: 70rpx;
+    padding-right: 46rpx;
+}
+
+select {
+}
+
+.parentClass{
+    width: 100%;
+  }

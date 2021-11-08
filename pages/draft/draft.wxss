@@ -1,0 +1,71 @@
+page {
+    padding-bottom: 100rpx;
+}
+.draft {
+    background-color: #fff;
+    padding-left: 44rpx;
+    padding-bottom: 10rpx;
+    margin-bottom: 60rpx;
+    box-shadow: 0px 3px 11px -10px rgba(0, 0, 0, 0.4);
+}
+.time {
+    padding-top: 10rpx;
+    padding-bottom: 42rpx;
+    display: flex;
+    color: #A7A7AC;
+    font-size: 24rpx;
+    align-items: center;
+}
+.time image{
+    margin-right: 16rpx;
+    width: 38rpx;
+}
+
+
+.draftTitle {
+    font-size: 40rpx;
+    font-weight: 700;
+    margin-bottom: 60rpx;
+}
+
+.description {
+    margin-bottom: 48rpx;
+}
+
+.qNum {
+    font-size: 24rpx;
+    margin-bottom: 18rpx;
+}
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option-img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.release {
+    width: 163rpx;
+    height: 52rpx;
+    border: 2rpx solid #2D77FB;
+    line-height: 52rpx;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial;
+    border-radius: 27px;
+    color: #2D77FB;
+    margin-left: 468rpx;
+
+}
+
+.cu-dialog {
+    padding-bottom: 20rpx;
+    background-color: #ebebeb;
+}
+.bottom-bar {
+    height: 90rpx;
+    line-height: 90rpx;
+    background-color: #fff;
+}

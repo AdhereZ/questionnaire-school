@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "multiHistogram": "../echarts-graphical/multiHistogram/multiHistogram",
+        "table": "../echarts-graphical/table/table"
+    }
+}

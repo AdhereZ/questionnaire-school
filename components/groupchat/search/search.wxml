@@ -1,0 +1,11 @@
+<view class="group">
+    <image class="group-image" src="../../../img/infomation/search.png" mode="widthFix">
+    </image>
+    <input type="text" class="group-in" placeholder="搜索" />
+    <navigator class="group-all">
+        全选
+    </navigator>
+    <navigator class="group-next" url="/pages/Group-Message/Group-Message">
+        下一步
+    </navigator>
+</view>

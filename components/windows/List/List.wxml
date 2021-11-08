@@ -1,0 +1,28 @@
+<!-- 框架 -->
+<navigator class="Frame" url="/pages/questionnaire/questionnaire?id={{publishQ._id}}">
+    <view class="dark" wx:if="{{idx === 2}}">
+        <view style="position: absolute; bottom: 20rpx; right: 40rpx; font-weight: 700; color: green;">已完成</view>
+    </view>
+    <!-- 标题 -->
+    <view style="display: flex; justify-content: space-between; margin-bottom: 15rpx;">
+        <view class="Title">
+            {{publishQ.title}}
+        </view>
+        <!-- bt币 -->
+        <view class="Gain" style="display: inline-block;">
+            +60BT
+        </view>
+    </view>
+    <!-- 正文 -->
+    <view class="Text">
+        {{publishQ.describe}}
+    </view>
+    <view style="display: flex;">
+        <!-- 题目数量 -->
+        <view class="Ques">共{{publishQ.questions.length}}题</view>
+        <!-- 剩余份数 -->
+        <view class="Remain">剩30份</view>
+    </view>
+    <!-- 类型 -->
+    <!-- <view class="Type">校外问卷</view> -->
+</navigator>

@@ -1,0 +1,33 @@
+page {
+    background-color: #fff;
+}
+.totalData {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 112rpx;
+    background-color: #2d77fb;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 106rpx 32rpx 90rpx; 
+    font-size: 56rpx;
+    border-radius: 0 0 40rpx 40rpx;
+}
+
+.excelBtn {
+    margin: 10rpx 0 10rpx 50rpx;
+    font-size: 24rpx;
+    padding: 0;
+    width: 95rpx;
+    height: 45rpx;
+    line-height: 45rpx;
+    text-align: center;
+    border: 2rpx solid #2d77fb;
+    border-radius: 8rpx;
+    color: #fff;
+    background-color: #2d77fb;
+}
+
+.excelBtn::after {
+    border: 0;
+  }

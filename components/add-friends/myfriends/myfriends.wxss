@@ -1,0 +1,36 @@
+.myfriend {
+  margin-top: 20rpx;
+  border-style: solid none solid;
+  border-width: 4rpx;
+  border-color: #BBBBBB;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  height: 110rpx;
+}
+.myfriend .img {
+  position: relative;
+  width: 72rpx;
+  height: 72rpx;
+  left: 36rpx;
+  top: 18rpx;
+  border: 2rpx solid #bbbbbb;
+}
+.myfriend .name {
+  position: relative;
+  height: 48rpx;
+  left: 128rpx;
+  color: #000000;
+  font-size: 34rpx;
+  text-align: left;
+  top: -40rpx;
+  font-family: PingFangSC-regular;
+}
+.myfriend .adding {
+  position: relative;
+  width: 48rpx;
+  height: 48rpx;
+  left: 650rpx;
+  top: -90rpx;
+  background-color: #a59f9f;
+  background-color: unset;
+}

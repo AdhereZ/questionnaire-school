@@ -1,0 +1,19 @@
+.mark_row {
+    width: 100%;
+    margin-left: 10rpx;
+    display: flex;
+    align-items: center;
+}
+.mark:nth-child(-n+5) {
+    margin-right: 78rpx;
+}
+
+.mark {
+    width: 46rpx;
+    background-color: #fff;
+    height: 52rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+  }

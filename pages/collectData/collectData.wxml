@@ -1,0 +1,58 @@
+<view class="totalData">
+    <view style="font-size: 28rpx; margin-top: 40rpx;">数据总量</view>
+    <view style="margin-top: 30rpx;">{{questionnaire.finishPerson}}</view>
+</view>
+    <button class="excelBtn" bindtap="createExcel">导出</button>
+<view>
+    <completeCard wx:for="{{answer}}" wx:key="{{item.questionTitle}}" index="{{index}}" answer="{{item}}">
+        <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 1}}">
+         <singleChoice answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+         </singleChoice>
+        </view>
+    
+        <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 2}}">
+            <multipleChoice answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </multipleChoice>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 3}}">
+            <fillBlank answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </fillBlank>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 4}}">
+            <score answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </score>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 5}}">
+            <sort answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </sort>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 6}}">
+            <matrixRadio answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </matrixRadio>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 7}}">
+            <multipleBlanks answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </multipleBlanks>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 8}}">
+            <dropDown answerOption="{{item.answerOption}}" class="the-id" typecode="{{item.typecode}}" answerPersonNum="{{item.answerPersonNum}}" question_id="{{item.question_id}}">
+            </dropDown>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 9}}">
+            <scale answerOption="{{item.answerOption}}" option="{{item.option}}" answerPersonNum="{{item.answerPersonNum}}" leftTab="{{item.leftTab}}" rightTab="{{item.rightTab}}" typecode="{{item.typecode}}" class="the-id" question_id="{{item.question_id}}">
+            </scale>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 10}}">
+            <proportion answerOption="{{item.answerOption}}" option="{{item.option}}" answerPersonNum="{{item.answerPersonNum}}"  totalProportion="{{item.totalProportion}}" typecode="{{item.typecode}}" class="the-id" question_id="{{item.question_id}}">
+            </proportion>
+           </view>
+     </completeCard>
+ </view>

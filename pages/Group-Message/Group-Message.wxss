@@ -1,0 +1,40 @@
+.send {
+  position: relative;
+  left: 28rpx;
+  width: 324rpx;
+  height: 40rpx;
+  color: #9f9fa5;
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.friends {
+  position: relative;
+  left: 28rpx;
+  width: 408rpx;
+  height: 60rpx;
+  color: #101010;
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
+}
+.space {
+  position: relative;
+  top: 46rpx;
+  margin-left: 28rpx;
+  margin-right: 28rpx;
+  height: 1012rpx;
+  line-height: 40rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  box-shadow: 0rpx 2rpx 12rpx 2rpx rgba(0, 0, 0, 0.4);
+}
+.group-input{
+  position: relative;
+  top: 20rpx;
+  margin-left: 30rpx;
+  margin-left: 30rpx;
+  text-align: left;
+  height: 972rpx;
+  width: 640rpx;
+}

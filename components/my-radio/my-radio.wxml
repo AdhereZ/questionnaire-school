@@ -1,0 +1,9 @@
+<view class="radio-option" style="margin-bottom: 15rpx;">
+    <view class="{{isChecked ? 'beCheck' : ''}} m-radio" bindtap="changeCheck">
+        <view class="circular" wx:if="{{isChecked}}"></view>
+    </view>
+    
+    <view>
+        <slot></slot>
+    </view>
+</view>

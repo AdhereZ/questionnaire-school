@@ -1,0 +1,19 @@
+<navigator class="chatting">
+    <view class="Img-position">
+        <view class="myImg">
+            <image src="../../../img/tabbar/cj1.png" mode="widthFix">
+            </image>
+        </view>
+    </view>
+    <view class="Texts">
+        <view class="ID">
+            Rachel Jayson
+        </view>
+        <view class="Message">
+            Can't wait to see you!
+        </view>
+    </view>
+    <view class="time">
+        5:09pm
+    </view>
+</navigator>

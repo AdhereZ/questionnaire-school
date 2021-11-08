@@ -1,0 +1,11 @@
+<view style="margin-bottom: 20rpx;">
+  <view class="complete-card">
+      <view style="width: 100%; height: 44rpx; font-weight: 700; margin-bottom: 10rpx;">
+          Q{{index+1}}：{{answer.questionTitle}}
+          <text style="color: #ccc;">({{type[answer.typecode-1]}})</text>
+        </view>
+        <view>
+            <slot></slot>
+        </view>
+    </view>
+  </view>

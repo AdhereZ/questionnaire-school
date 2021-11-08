@@ -1,2 +1,4 @@
-<!--components/index/index.wxml-->
-<text>components/index/index.wxml</text>
+<!-- 列表 -->
+<view class="index-list">
+    <List wx:for="{{allPublishQ}}" wx:key="{{item._id}}" publishQ="{{item}}" idx="{{index}}"></List>
+</view>

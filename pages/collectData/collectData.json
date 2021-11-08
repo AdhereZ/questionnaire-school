@@ -1,0 +1,16 @@
+{
+  "usingComponents": {
+    "completeCard": "childCmp/completeCard/completeCard",
+    "singleChoice": "/components/dataShow/singleChoice/singleChoice",
+    "fillBlank": "/components/dataShow/fillBlank/fillBlank",
+    "score": "/components/dataShow/score/score",
+    "scale": "/components/dataShow/scale/scale",
+    "proportion": "/components/dataShow/proportion/proportion",
+    "dropDown": "/components/dataShow/dropDown/dropDown",
+    "multipleBlanks": "/components/dataShow/multipleBlanks/multipleBlanks",
+    "multipleChoice": "/components/dataShow/multipleChoice/multipleChoice",
+    "matrixRadio": "/components/dataShow/matrixRadio/matrixRadio",
+    "sort": "/components/dataShow/sort/sort"
+  },
+  "navigationBarTitleText": "数据报表"
+}

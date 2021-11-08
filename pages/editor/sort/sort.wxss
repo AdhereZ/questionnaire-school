@@ -1,0 +1,86 @@
+/* pages/editor/sort/sort.wxss */.question {
+    margin-top: 26rpx;
+    margin-bottom: 20rpx;
+    padding: 14rpx 24rpx 24rpx 26rpx;
+    background-color: #fff;
+
+}
+
+.question textarea {
+    padding: 8rpx 24rpx 8rpx 24rpx;
+    border: 2rpx solid #B6B6B6;
+    border-radius: 28rpx;
+    font-size:28rpx;
+    line-height: 20rpx;
+    color: #101010;
+    width: 700rpx;
+    height: 152rpx;
+}
+
+.option {
+    margin-top: 18rpx;
+    margin-bottom: 100rpx;
+}
+
+.inputText {
+    background-color: #fff;
+    padding: 10rpx 18rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14rpx;
+}
+
+.inputText image {
+    flex: 1;
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.inputText input {
+    margin-left: 10rpx;
+    margin-right: 36rpx;
+    flex: 12;
+    font-size: 28rpx;
+    color: #888888;
+    height: 60rpx;
+    padding-left: 10rpx;
+    background-color: #F3F3F3;
+}
+
+.addoption {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10rpx 18rpx;
+    height: 80rpx;
+}
+
+.answer {
+    background-color: #fff;
+    height: 80rpx;
+    padding: 20rpx 38rpx 20rpx 18rpx;
+}
+.addoption image {
+    width: 48rpx;
+    height: 48rpx;
+}
+.switch {
+    float: right;
+}
+
+.setup {
+    margin-bottom: 110rpx;
+}
+
+.submit {
+    background-color: #5677fc;
+    color: #fff;
+    width: 430rpx;
+    height: 68rpx;
+    font-size: 28rpx;
+    font-weight: normal;
+    margin-bottom: 45rpx;
+}
+
+
+

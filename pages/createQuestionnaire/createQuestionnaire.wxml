@@ -1,0 +1,75 @@
+<view class="QaTitle">
+    <view style="font-weight: 700;font-family: SFUIText-bold; font-size: 36rpx;">问卷标题</view>
+
+        <textarea type="text" class="titleInput" placeholder="输入标题（100字内）" value="{{title}}" bindinput="titleInput"></textarea>
+</view>
+
+<view class="describe">
+    <view style="font-family: SFUIText-bold; font-size: 36rpx; font-weight: 700;">备注说明</view>
+    <textarea type="text" class="titleInput" placeholder="请输入填写本问卷的相关要求（300字内）" class="describeInput" value="{{describe}}" bindinput="textInput"></textarea>
+</view>
+
+<view>
+    <completeCard wx:for="{{questions}}" wx:key="{{item.question_id}}" index="{{index}}" question="{{item}}" bindtapTrigger="chooseChange" choose="{{item.choose}}" bindremove="remove">
+        <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 1}}">
+         <singleChoice option="{{item.option}}">
+         </singleChoice>
+        </view>
+    
+        <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 2}}">
+            <multipleChoice option="{{item.option}}" >
+            </multipleChoice>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 3}}">
+            <fillBlank option="{{item.option}}" >
+            </fillBlank>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 4}}">
+            <score option="{{item.option}}" >
+            </score>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 5}}">
+            <sort option="{{item.option}}" >
+            </sort>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 6}}">
+            <matrixRadio lineOption="{{item.lineOption}}" >
+            </matrixRadio>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 7}}">
+            <multipleBlanks option="{{item.option}}" >
+            </multipleBlanks>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 8}}">
+            <dropDown option="{{item.option}}"  >
+            </dropDown>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 9}}">
+            <scale option="{{item.option}}"  leftTab="{{item.leftTab}}" rightTab="{{item.rightTab}}">
+            </scale>
+           </view>
+    
+           <view style="margin-left: 18rpx;" wx:if="{{item.typecode === 10}}">
+            <proportion option="{{item.option}}"  totalProportion="{{item.totalProportion}}">
+            </proportion>
+           </view>
+     </completeCard>
+</view>
+
+<navigator class="addQuestion" url="../chooseType/chooseType" wx:if="{{questions.length === 0}}">
+    <image mode="widthFix" src="../../img/TitleEditor/addicon.png"></image>
+    <view style="color: #2D77FB; font-size: 40rpx; font-family: SFUIText-regular;">添加题目</view>
+</navigator>
+
+<view class="option">
+    <navigator class="option_btn" url="../chooseType/chooseType">加题</navigator>
+    <view class="option_btn" bindtap="preview">预览</view>
+    <view class="option_btn" bindtap="handleDraft">完成</view>
+</view>

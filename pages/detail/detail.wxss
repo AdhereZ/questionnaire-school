@@ -1,0 +1,31 @@
+page {
+    background-color: #fff;
+}
+
+.tableArea {
+    width: 680rpx;
+    border: 4rpx solid #000;
+    border-radius: 26rpx;
+    padding: 4rpx 34rpx;
+    margin: 40rpx 0 30rpx 40rpx;
+}
+.numRow {
+    display: flex; 
+    align-items: center;
+    padding: 4rpx 46rpx 4rpx 34rpx;
+    font-weight: 700;
+    width: 680rpx;
+    
+}
+
+.text {
+    margin: 20rpx;
+}
+
+.text_row {
+    margin-bottom: 20rpx;
+    padding: 10rpx;
+    border: 2rpx solid #878585;
+    color: #878585;
+}
+

@@ -1,0 +1,7 @@
+<button bindtap="switch" class="switch">切换</button>
+<view class="my-charts">
+    <Histogram answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 1}}"></Histogram>
+    <barChart answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 2}}"></barChart>
+    <pieChart answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}" wx:if="{{graph === 3}}"></pieChart>
+</view>
+<table  answerOption="{{answerOption}}" answerPersonNum="{{answerPersonNum}}"></table>

@@ -1,0 +1,12 @@
+<view class="remind">
+    <navigator>
+        <view style="display:flex;  align-items: center;">
+            <image src="/img/infomation/laba.png" mode="widthFix" ></image>　
+           <view style="line-height: 44rpx;">请完善个人信息</view>
+        </view>
+        <view class="right">
+            <image src="/img/icons/arrow-right.png" mode="widthFix" style="width: 28rpx; height: 28rpx;"></image>
+        </view>
+    </navigator>
+
+</view>

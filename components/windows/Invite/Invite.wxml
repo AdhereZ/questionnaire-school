@@ -1,0 +1,13 @@
+<navigator class="invite">
+    <view class="Img">
+       <image src="/img/other/md-error.png" mode="widthFix"></image>
+    </view>
+    <view class="Words">
+        <view class="Title">
+            邀请回答
+        </view>
+        <view class="Body">
+            关于学校兴趣社团的调研
+        </view>
+    </view>
+</navigator>
